@@ -17,6 +17,18 @@ src/
 
 # Config
 config.yaml
+.env
+.vscode/
+
+# Project files
+nominatim_cache.json
+project_naam_structuur.yaml
+*.md
+
+# Data files (additional)
+data/*.pdf
+data/*.json
+data/gisco/
 
 # OS
 .DS_Store
