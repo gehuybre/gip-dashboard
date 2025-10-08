@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbinden en Vernieuwen | GIP 2025-2029</title>
+    <meta name="description" content="Een visueel verhaal over het Geïntegreerd Investeringsprogramma van Mobiliteit en Openbare Werken Vlaanderen">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/longread.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Verbinden en Vernieuwen</h1>
+            <p class="hero-subtitle">Het Geïntegreerd Investeringsprogramma 2025-2029</p>
+            <p class="hero-description">
+                Een investeringsplan van €7,5 miljard voor de Vlaamse infrastructuur
+            </p>
+            <a href="#intro" class="scroll-indicator">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20 10 L20 30 M12 22 L20 30 L28 22" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section id="intro" class="content-section">
+        <div class="content-container">
+            <h2>Een toekomstgericht investeringsplan</h2>
+            <p class="lead">
+                Het Geïntegreerd Investeringsprogramma (GIP) bundelt alle investeringen van het beleidsdomein 
+                Mobiliteit en Openbare Werken in een gemeenschappelijk kader. Met 777 projecten en een 
+                totaalbudget van €7,51 miljard investeert Vlaanderen de komende jaren in een veilige, 
+                duurzame en efficiënte infrastructuur.
+            </p>
+            <div class="stats-highlight">
+                <div class="stat-item">
+                    <div class="stat-number">777</div>
+                    <div class="stat-label">Investeringsprojecten</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">€7,51</div>
+                    <div class="stat-label">Miljard investering</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Beleidsdoelstellingen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section: Oosterweelverbinding -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/JA_BjuffGsQ?autoplay=1&mute=1&loop=1&playlist=JA_BjuffGsQ&controls=0" 
+                    title="Oosterweelverbinding - Project van de Eeuw" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video-caption">
+            <h3>Oosterweelverbinding</h3>
+            <p>Het grootste infrastructuurproject van Vlaanderen voltooit de Ring van Antwerpen</p>
+        </div>
+    </section>
+
+    <!-- Map Section: Grote Infrastructuur -->
+    <section class="map-section" data-filter="programma" data-filter-value="Grote infrastructuurprojecten">
+        <div class="map-overlay">
+            <h2>Grote Infrastructuurprojecten</h2>
+            <p>Van de Oosterweelverbinding tot nieuwe bruggen en tunnels: ontdek waar Vlaanderen investeert in grote infrastructuur</p>
+        </div>
+        <div id="map-infra" class="map-container"></div>
+    </section>
+
+    <!-- Content: Asset Management -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Onderhoud en vernieuwing van bestaande infrastructuur</h2>
+            <p class="lead">
+                Een groot deel van het GIP gaat naar asset management: het beheer en onderhoud van 
+                de bestaande infrastructuur. Dit omvat wegen, bruggen, tunnels, sluizen en waterwegen 
+                die dagelijks door miljoenen Vlamingen worden gebruikt.
+            </p>
+            <blockquote>
+                "Investeren in onderhoud is investeren in veiligheid. Een brug die vandaag wordt 
+                hersteld, is morgen een veilige verbinding voor duizenden reizigers."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Video Section: Port of Antwerp -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/XndIibPDuxY?autoplay=1&mute=1&loop=1&playlist=XndIibPDuxY&controls=0" 
+                    title="Port of Antwerp-Bruges 4K" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video-caption">
+            <h3>Haven van Antwerpen-Brugge</h3>
+            <p>De grootste haven van Europa blijft groeien dankzij strategische investeringen</p>
+        </div>
+    </section>
+
+    <!-- Map Section: Verkeersveiligheid -->
+    <section class="map-section" data-filter="programma" data-filter-value="Verkeersveiligheid">
+        <div class="map-overlay">
+            <h2>Verkeersveiligheid</h2>
+            <p>Investeringen in verkeersveilige infrastructuur: fietsbruggen, veilige kruispunten en snelheidsremmers</p>
+        </div>
+        <div id="map-safety" class="map-container"></div>
+    </section>
+
+    <!-- Content: Modal Shift -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Van auto naar duurzame mobiliteit</h2>
+            <p class="lead">
+                Vlaanderen investeert massaal in alternatieven voor de auto: uitbreiding van het 
+                trein- en tramnet, nieuwe fietssnelwegen en betere busverbindingen. Het doel: 
+                meer mensen verleiden om duurzaam te reizen.
+            </p>
+            <div class="highlight-box">
+                <h3>Kerncijfers duurzame mobiliteit</h3>
+                <ul>
+                    <li>Uitbreiding tramnet in Gent en Antwerpen</li>
+                    <li>400 km nieuwe fietssnelwegen tegen 2030</li>
+                    <li>Elektrificatie van 85% van het spoornetwerk</li>
+                    <li>20 nieuwe parkeer-en-reis voorzieningen</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section: Timelapse Construction -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/k2Z8zlqAmvQ?autoplay=1&mute=1&loop=1&playlist=k2Z8zlqAmvQ&controls=0" 
+                    title="Oosterweelverbinding Timelapse" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video-caption">
+            <h3>Bouwen aan de toekomst</h3>
+            <p>Timelapse beelden tonen de spectaculaire vooruitgang van grote infrastructuurwerken</p>
+        </div>
+    </section>
+
+    <!-- Map Section: Waterbeheersing -->
+    <section class="map-section" data-filter="programma" data-filter-value="Waterbeheersing">
+        <div class="map-overlay">
+            <h2>Waterbeheersing en Waterwegen</h2>
+            <p>Het Sigmaplan en investeringen in waterwegen beschermen Vlaanderen tegen overstromingen</p>
+        </div>
+        <div id="map-water" class="map-container"></div>
+    </section>
+
+    <!-- Content: Waterways -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Waterwegen: de duurzame transportader</h2>
+            <p class="lead">
+                De Vlaamse waterwegen zijn cruciaal voor het goederentransport. Met investeringen in 
+                nieuwe sluizen, verdieping van kanalen en modernisering van bruggen blijven onze 
+                waterwegen concurrentieel en klimaatvriendelijk.
+            </p>
+            <div class="two-column">
+                <div>
+                    <h3>Albertkanaal</h3>
+                    <p>
+                        Modernisering van sluizen en uitbreiding capaciteit voor grotere schepen. 
+                        Het Albertkanaal blijft de belangrijkste verbinding tussen de haven van 
+                        Antwerpen en het Europese achterland.
+                    </p>
+                </div>
+                <div>
+                    <h3>Sigmaplan</h3>
+                    <p>
+                        Het grootste overstromingsplan van Europa beschermt Vlaanderen tegen 
+                        stormvloeden en extreme neerslag. Investering in dijken, wachtbekkens 
+                        en natuurgebieden.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section: Drone Footage -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/g4XvcilqRLs?autoplay=1&mute=1&loop=1&playlist=g4XvcilqRLs&controls=0" 
+                    title="Antwerpen 4K Drone" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video-caption">
+            <h3>Antwerpen vanuit de lucht</h3>
+            <p>De metropool en haar infrastructuur in adembenemende 4K beelden</p>
+        </div>
+    </section>
+
+    <!-- Map Section: All Projects Overview -->
+    <section class="map-section" data-filter="all">
+        <div class="map-overlay">
+            <h2>Het Complete Overzicht</h2>
+            <p>Alle 777 investeringsprojecten op één kaart - €7,51 miljard voor de Vlaamse infrastructuur</p>
+        </div>
+        <div id="map-all" class="map-container"></div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="content-section final-section">
+        <div class="content-container">
+            <h2>Samen bouwen aan Vlaanderen</h2>
+            <p class="lead">
+                Het Geïntegreerd Investeringsprogramma is meer dan een lijst van projecten. 
+                Het is een visie op hoe Vlaanderen zich ontwikkelt: toegankelijk, duurzaam, 
+                veilig en verbonden.
+            </p>
+            <div class="cta-container">
+                <a href="../dashboard/index.html" class="cta-button">Ontdek alle projecten</a>
+                <a href="../dashboard/index.html#download" class="cta-button secondary">Download de data</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="longread-footer">
+        <div class="footer-content">
+            <p>
+                <strong>Bron:</strong> Vlaamse Regering, 14 juli 2025 - 
+                VR 2025 1407 MED.0277-4: Geïntegreerd Investeringsprogramma 2025-2029 
+                van het beleidsdomein Mobiliteit en Openbare Werken
+            </p>
+            <p class="footer-links">
+                <a href="../dashboard/index.html">Dashboard</a>
+                <a href="../web/index.html">Kaart</a>
+                <a href="#top">Terug naar boven</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/longread.js"></script>
+</body>
+</html>
