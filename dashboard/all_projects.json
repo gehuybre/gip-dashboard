@@ -16316,34 +16316,13 @@
       "budget_2027": 4800000.0,
       "totaal_budget": 13900000.0,
       "start_jaar": 2025
-    },
-    {
-      "id": 778,
-      "programma": "Eindtotaal",
-      "subprogramma": "",
-      "entiteit": "",
-      "project_naam": "Onbekend",
-      "deelproject_naam": "",
-      "locatie": "",
-      "gemeenten": "",
-      "aantal_gemeenten": 0,
-      "infrastructuur_type": "onbekend",
-      "infrastructuur_naam": "",
-      "werk_type": "onbekend",
-      "is_traject": "False",
-      "project_scope": "onbekend",
-      "budget_2025": 2585429280.69,
-      "budget_2026": 2423646670.31,
-      "budget_2027": 2501074896.75,
-      "totaal_budget": 7510150847.75,
-      "start_jaar": 2025
     }
   ],
   "stats": {
-    "total_projects": 778,
-    "total_budget_2025": 5170858561.38,
-    "total_budget_2026": 4847293340.61,
-    "total_budget_2027": 5002149793.49,
-    "total_budget_all": 15020301695.48
+    "total_projects": 777,
+    "total_budget_2025": 2585429280.69,
+    "total_budget_2026": 2423646670.3,
+    "total_budget_2027": 2501074896.74,
+    "total_budget_all": 7510150847.73
   }
 }
