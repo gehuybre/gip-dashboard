@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIP Infrastructure Projects 2025-2027</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading GIP projects...</p>
+    </div>
+    
+    <div id="app" class="app-hidden">
+        <div id="controls">
+            <h1>GIP Infrastructure Projects 2025-2027</h1>
+            <a href="../dashboard/index.html" class="dashboard-link" style="position: absolute; top: 1rem; right: 1rem; padding: 0.5rem 1rem; background: #0066cc; color: white; text-decoration: none; border-radius: 0; font-weight: 600; font-size: 0.875rem;">Dashboard</a>
+            
+            <div class="control-group">
+                <label for="year-filter">Filter by Year:</label>
+                <select id="year-filter">
+                    <option value="">All years</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="entity-filter">Filter by Entity:</label>
+                <select id="entity-filter">
+                    <option value="">All entities</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="infrastructure-filter">Filter by Infrastructure:</label>
+                <select id="infrastructure-filter">
+                    <option value="">All types</option>
+                </select>
+            </div>
+            
+                        <div class="legend">
+                <h3>Investment Start Year</h3>
+                <div class="legend-item">
+                    <span class="legend-color legend-2025"></span>
+                    <span class="legend-label">2025</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color legend-2026"></span>
+                    <span class="legend-label">2026</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color legend-2027"></span>
+                    <span class="legend-label">2027</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color legend-no-budget"></span>
+                    <span class="legend-label">No budget</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "total_projects": 570,
+  "total_chunks": 6,
+  "chunk_size": 100,
+  "chunks": [
+    "projects_chunk_01.json",
+    "projects_chunk_02.json",
+    "projects_chunk_03.json",
+    "projects_chunk_04.json",
+    "projects_chunk_05.json",
+    "projects_chunk_06.json"
+  ],
+  "stats": {
+    "total_projects": 778,
+    "geocoded_projects": 570,
+    "geocoding_success_rate": 73.26478149100257,
+    "infrastructure_types": {},
+    "werk_types": {},
+    "investment_years": {
+      "projects_starting_2025": 372,
+      "projects_starting_2026": 124,
+      "projects_starting_2027": 74,
+      "projects_no_budget": 0,
+      "color_legend": {
+        "2025": "#FF6B6B",
+        "2026": "#4ECDC4",
+        "2027": "#45B7D1",
+        "no_budget": "#95A5A6"
+      }
+    }
+  }
+}

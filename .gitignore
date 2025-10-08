@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Data files
+data/*.csv
+src/
+
+# Config
+config.yaml
+
+# OS
+.DS_Store
+Thumbs.db

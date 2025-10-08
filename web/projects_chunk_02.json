@@ -1,0 +1,2811 @@
+{
+  "chunk_info": {
+    "chunk_number": 2,
+    "total_chunks": 6,
+    "projects_in_chunk": 100,
+    "start_index": 100,
+    "end_index": 199
+  },
+  "projects": [
+    {
+      "id": 119,
+      "naam": "N34a SO havenwegen Zeebrugge doortocht",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "wegen; bruggen; waterinfrastructuur",
+      "werk_type": "uitvoering",
+      "infrastructuur_naam": "N34a",
+      "gemeenten": "",
+      "coordinates": [
+        51.3332511,
+        3.2080626
+      ],
+      "geocoding_info": {
+        "query_used": "N34a, Belgium",
+        "name": "Kustlaan, Zeebrugge-Dorp, Zeebrugge, Lissewege, Brugge, West-Vlaanderen, Vlaanderen, 8380, België / Belgique / Belgien",
+        "type": "tertiary",
+        "class": "highway",
+        "importance": 0.05340505455100324
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 1000000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 120,
+      "naam": "N424-N456 SO havenwegen Gent",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 400000.0,
+      "infrastructuur_type": "wegen; waterinfrastructuur",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "N424",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0884034,
+        3.7273297
+      ],
+      "geocoding_info": {
+        "query_used": "N456, Gent, Belgium",
+        "name": "Meulestedebrug, Meulestede, Gent, Oost-Vlaanderen, Vlaanderen, 9000, België / Belgique / Belgien",
+        "type": "secondary",
+        "class": "highway",
+        "importance": 0.24549928620455394
+      },
+      "budgets": {
+        "budget_2025": 400000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 121,
+      "naam": "N424-N456 SO havenwegen Gent (zuidelijk)",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 100000.0,
+      "infrastructuur_type": "wegen; waterinfrastructuur",
+      "werk_type": "studie",
+      "infrastructuur_naam": "N424",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0884034,
+        3.7273297
+      ],
+      "geocoding_info": {
+        "query_used": "N456, Gent, Belgium",
+        "name": "Meulestedebrug, Meulestede, Gent, Oost-Vlaanderen, Vlaanderen, 9000, België / Belgique / Belgien",
+        "type": "secondary",
+        "class": "highway",
+        "importance": 0.24549928620455394
+      },
+      "budgets": {
+        "budget_2025": 100000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 122,
+      "naam": "A10 vervanging bovenbrug J. Mertensstraat (Dilbeek)",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 575000.0,
+      "infrastructuur_type": "wegen; bruggen; waterinfrastructuur",
+      "werk_type": "vervanging",
+      "infrastructuur_naam": "A10",
+      "gemeenten": "Dilbeek",
+      "coordinates": [
+        50.8806095,
+        4.2539324
+      ],
+      "geocoding_info": {
+        "query_used": "A10, Dilbeek, Belgium",
+        "name": "E40, Groot-Bijgaarden, Dilbeek, Halle-Vilvoorde, Vlaams-Brabant, Vlaanderen, 1702, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.053389578850995614
+      },
+      "budgets": {
+        "budget_2025": 575000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 123,
+      "naam": "A10/E40 Drongen vervanging Goedingebrug over Leie",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 26500000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "uitvoering; vervanging",
+      "infrastructuur_naam": "A10",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0387113,
+        3.622684
+      ],
+      "geocoding_info": {
+        "query_used": "A10, Gent, Belgium",
+        "name": "E40, Drongen, Gent, Oost-Vlaanderen, 9031, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.05340689021133742
+      },
+      "budgets": {
+        "budget_2025": 500000.0,
+        "budget_2026": 26000000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 124,
+      "naam": "Brug over Zwarte Beek Diest",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 543000.0,
+      "infrastructuur_type": "bruggen; waterinfrastructuur",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "Brug Over Zwarte Beek Diest",
+      "gemeenten": "Diest",
+      "coordinates": [
+        50.9963227,
+        5.054356
+      ],
+      "geocoding_info": {
+        "query_used": "Diest, Belgium",
+        "name": "Diest, Leuven, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5198607280948221
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 543000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 125,
+      "naam": "E17 Waregem - brug in Nokerseweg",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 2350000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "E17",
+      "gemeenten": "Waregem",
+      "coordinates": [
+        50.8876961,
+        3.4700654
+      ],
+      "geocoding_info": {
+        "query_used": "Nokerseweg, Waregem, Belgium",
+        "name": "Nokerseweg, Warande, Waregem, Kortrijk, West-Vlaanderen, 8790, België / Belgique / Belgien",
+        "type": "tertiary",
+        "class": "highway",
+        "importance": 0.05339271152819101
+      },
+      "budgets": {
+        "budget_2025": 2350000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 126,
+      "naam": "E19 Mechelen - Renovatie brug 2003",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 900000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "E19",
+      "gemeenten": "Mechelen",
+      "coordinates": [
+        51.0408858,
+        4.4532828
+      ],
+      "geocoding_info": {
+        "query_used": "E19, Mechelen, Belgium",
+        "name": "E19, Battel, Mechelen-Noord, Mechelen, Antwerpen, Vlaanderen, 2800, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.05340000381475544
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 900000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 127,
+      "naam": "E19 Mechelen - Renovatie brug 2003 studie",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 100000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "renovatie; studie",
+      "infrastructuur_naam": "E19",
+      "gemeenten": "Mechelen",
+      "coordinates": [
+        51.0408858,
+        4.4532828
+      ],
+      "geocoding_info": {
+        "query_used": "E19, Mechelen, Belgium",
+        "name": "E19, Battel, Mechelen-Noord, Mechelen, Antwerpen, Vlaanderen, 2800, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.05340000381475544
+      },
+      "budgets": {
+        "budget_2025": 100000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 128,
+      "naam": "E19 Rumst - Renovatie brug 1919 studie",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 500000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "renovatie; studie",
+      "infrastructuur_naam": "E19",
+      "gemeenten": "Mechelen; Rumst",
+      "coordinates": [
+        51.0408858,
+        4.4532828
+      ],
+      "geocoding_info": {
+        "query_used": "E19, Mechelen, Belgium",
+        "name": "E19, Battel, Mechelen-Noord, Mechelen, Antwerpen, Vlaanderen, 2800, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.05340000381475544
+      },
+      "budgets": {
+        "budget_2025": 500000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 129,
+      "naam": "E313 Wommelgem - Vervanging brug 0719",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 500000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "studie; vervanging",
+      "infrastructuur_naam": "E313",
+      "gemeenten": "Wommelgem",
+      "coordinates": [
+        51.2120257,
+        4.520523
+      ],
+      "geocoding_info": {
+        "query_used": "E313, Wommelgem, Belgium",
+        "name": "Koning Boudewijnsnelweg, Beemdkant, Wommelgem, Antwerpen, Vlaanderen, 2160, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.14170341258693808
+      },
+      "budgets": {
+        "budget_2025": 500000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 130,
+      "naam": "Uitvoering",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 750000.0,
+      "infrastructuur_type": "onbekend",
+      "werk_type": "uitvoering",
+      "infrastructuur_naam": "",
+      "gemeenten": "Wommelgem",
+      "coordinates": [
+        51.2031044,
+        4.5238022
+      ],
+      "geocoding_info": {
+        "query_used": "Wommelgem, Belgium",
+        "name": "Wommelgem, Antwerpen, 2160, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4754831759273437
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 750000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 131,
+      "naam": "Maandagweg renovatie Brug 21",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 1500000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "renovatie; uitvoering",
+      "infrastructuur_naam": "Maandagweg Renovatie Brug",
+      "gemeenten": "Kortrijk",
+      "coordinates": [
+        50.8098537,
+        3.2935082
+      ],
+      "geocoding_info": {
+        "query_used": "Maandagweg, Kortrijk, Belgium",
+        "name": "Maandagweg, Kortrijk, West-Vlaanderen, 8500, België / Belgique / Belgien",
+        "type": "residential",
+        "class": "highway",
+        "importance": 0.05339835431448841
+      },
+      "budgets": {
+        "budget_2025": 1500000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 132,
+      "naam": "N1 R10 Antwerpen Heraanleg Singel x Grotesteenweg",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "wegen; waterinfrastructuur",
+      "werk_type": "aanleg; heraanleg; uitvoering",
+      "infrastructuur_naam": "N1",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.1862334,
+        4.4293951
+      ],
+      "geocoding_info": {
+        "query_used": "Grotesteenweg, Antwerpen, Belgium",
+        "name": "Grotesteenweg, De Veldekens, Nieuw Kwartier, Berchem, Antwerpen, Vlaanderen, 2600, België / Belgique / Belgien",
+        "type": "primary",
+        "class": "highway",
+        "importance": 0.053411676966506415
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 133,
+      "naam": "N437 Waregem Kruishoutem renovatie brug 41",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 970000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "renovatie; uitvoering",
+      "infrastructuur_naam": "N437",
+      "gemeenten": "Waregem",
+      "coordinates": [
+        50.8924002,
+        3.4570781
+      ],
+      "geocoding_info": {
+        "query_used": "N437, Waregem, Belgium",
+        "name": "Kruishoutemseweg, Jager, Waregem, Kortrijk, West-Vlaanderen, 8790, België / Belgique / Belgien",
+        "type": "secondary",
+        "class": "highway",
+        "importance": 0.05339271152819101
+      },
+      "budgets": {
+        "budget_2025": 970000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 134,
+      "naam": "N446 Waasmunster Vernieuwen Durmebrug",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 6600000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "uitvoering",
+      "infrastructuur_naam": "N446",
+      "gemeenten": "Waasmunster",
+      "coordinates": [
+        51.1307334,
+        4.0788531
+      ],
+      "geocoding_info": {
+        "query_used": "N446, Waasmunster, Belgium",
+        "name": "Patotterijstraat, Belsele, Waasmunster, Dendermonde, Oost-Vlaanderen, 9250, België / Belgique / Belgien",
+        "type": "secondary",
+        "class": "highway",
+        "importance": 0.053393559929808466
+      },
+      "budgets": {
+        "budget_2025": 6600000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 135,
+      "naam": "N9 Adegem - vernieuwen brug over Afleidingskanaal",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 7000000.0,
+      "infrastructuur_type": "wegen; bruggen; waterinfrastructuur",
+      "werk_type": "uitvoering",
+      "infrastructuur_naam": "N9",
+      "gemeenten": "Maldegem; Eeklo",
+      "coordinates": [
+        51.2013783,
+        3.5169036
+      ],
+      "geocoding_info": {
+        "query_used": "N9, Maldegem, Belgium",
+        "name": "N9, Adegem, Maldegem, Eeklo, Oost-Vlaanderen, 9991, België / Belgique / Belgien",
+        "type": "primary",
+        "class": "highway",
+        "importance": 0.05339109559777215
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 7000000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 137,
+      "naam": "R1 (afrit zuid) Antwerpen - Afbraak brug 5337",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 200000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "R1",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.1978445,
+        4.3859948
+      ],
+      "geocoding_info": {
+        "query_used": "R1, Antwerpen, Belgium",
+        "name": "R1, Antwerpen, 2000, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.053411676966506415
+      },
+      "budgets": {
+        "budget_2025": 200000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 138,
+      "naam": "Studie",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 50000.0,
+      "infrastructuur_type": "onbekend",
+      "werk_type": "studie",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 50000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 139,
+      "naam": "R30 - Brugge kruispunt Gentpoort",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "R30",
+      "gemeenten": "Brugge",
+      "coordinates": [
+        51.207719,
+        3.240704
+      ],
+      "geocoding_info": {
+        "query_used": "R30, Brugge, Belgium",
+        "name": "Buiten Kazernevest, Assebroek, Brugge, West-Vlaanderen, 8310, België / Belgique / Belgien",
+        "type": "primary",
+        "class": "highway",
+        "importance": 0.383432079812998
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 140,
+      "naam": "R40 Keizersviaduct",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 2200000.0,
+      "infrastructuur_type": "wegen; bruggen",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "R40",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0678837,
+        3.7331071
+      ],
+      "geocoding_info": {
+        "query_used": "R40, Gent, Belgium",
+        "name": "Muidelaan, Tolhuis, Gent, Oost-Vlaanderen, Vlaanderen, 9000, België / Belgique / Belgien",
+        "type": "primary",
+        "class": "highway",
+        "importance": 0.24256732666913378
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 2200000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 141,
+      "naam": "fase 2",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 3000000.0,
+      "infrastructuur_type": "onbekend",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0538286,
+        3.7250121
+      ],
+      "geocoding_info": {
+        "query_used": "Gent, Belgium",
+        "name": "Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6825134473857584
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 3000000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 143,
+      "naam": "Vernieuwen van de westelijke brugvoeg van brug 5379",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 300000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "uitvoering",
+      "infrastructuur_naam": "Vernieuwen Van De Westelijke Brugvoeg Van Brug",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 300000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 144,
+      "naam": "Viaduct Wilrijk A12 vernieuwing",
+      "verantwoordelijke": "Agentschap Wegen En Verkeer",
+      "bedrag": 2000000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "vernieuwing; studie",
+      "infrastructuur_naam": "A12",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.1830544,
+        4.3911675
+      ],
+      "geocoding_info": {
+        "query_used": "A12, Antwerpen, Belgium",
+        "name": "Bevrijdingstunnel, Hoogte, Antwerpen, Vlaanderen, 2020, België / Belgique / Belgien",
+        "type": "motorway",
+        "class": "highway",
+        "importance": 0.19320077280132728
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 2000000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 146,
+      "naam": "Brug Maaseik",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1140000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "studie",
+      "infrastructuur_naam": "Brug Maaseik",
+      "gemeenten": "Maaseik",
+      "coordinates": [
+        51.0241668,
+        5.3573487
+      ],
+      "geocoding_info": {
+        "query_used": "Brug Maaseik, Maaseik, Belgium",
+        "name": "Brugstraat, Houthalen, Houthalen-Helchteren, Maaseik, Limburg, 3530, België / Belgique / Belgien",
+        "type": "tertiary",
+        "class": "highway",
+        "importance": 0.05339093690394442
+      },
+      "budgets": {
+        "budget_2025": 1140000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 147,
+      "naam": "Brug Maaseik - werken",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 940000.0,
+      "infrastructuur_type": "onbekend",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "",
+      "gemeenten": "Maaseik",
+      "coordinates": [
+        51.0947181,
+        5.791733
+      ],
+      "geocoding_info": {
+        "query_used": "Maaseik, Belgium",
+        "name": "Maaseik, Limburg, Vlaanderen, 3680, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5041743183803933
+      },
+      "budgets": {
+        "budget_2025": 100000.0,
+        "budget_2026": 840000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 148,
+      "naam": "Herbouw brugdek nieuwpoortjebrug te Bulskamp",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 250000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Herbouw Brugdek Nieuwpoortjebrug",
+      "gemeenten": "Veurne",
+      "coordinates": [
+        51.0724273,
+        2.6621323
+      ],
+      "geocoding_info": {
+        "query_used": "Veurne, Belgium",
+        "name": "Veurne, West-Vlaanderen, 8630, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5210507628416085
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 250000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 149,
+      "naam": "Herbouw Krommewalbrug te Gent",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 150000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Herbouw Krommewalbrug",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0538286,
+        3.7250121
+      ],
+      "geocoding_info": {
+        "query_used": "Gent, Belgium",
+        "name": "Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6825134473857584
+      },
+      "budgets": {
+        "budget_2025": 150000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 150,
+      "naam": "Herbouw Leiebrug te Kortrijk",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 4018000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; studie; herbouw",
+      "infrastructuur_naam": "Herbouw Leiebrug",
+      "gemeenten": "Kortrijk",
+      "coordinates": [
+        50.8276429,
+        3.2659884
+      ],
+      "geocoding_info": {
+        "query_used": "Kortrijk, Belgium",
+        "name": "Kortrijk, West-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5930709421048221
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 4018000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 151,
+      "naam": "Herbouw Meulestedebrug Gent",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 7630000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Herbouw Meulestedebrug",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0538286,
+        3.7250121
+      ],
+      "geocoding_info": {
+        "query_used": "Gent, Belgium",
+        "name": "Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6825134473857584
+      },
+      "budgets": {
+        "budget_2025": 5710000.0,
+        "budget_2026": 1920000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 152,
+      "naam": "Herbouw Spanjeveerbrug Mendonk",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 260000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Herbouw Spanjeveerbrug",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0538286,
+        3.7250121
+      ],
+      "geocoding_info": {
+        "query_used": "Gent, Belgium",
+        "name": "Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6825134473857584
+      },
+      "budgets": {
+        "budget_2025": 260000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 153,
+      "naam": "Herbouw Tolpoortbrug te Deinze",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 7115000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Herbouw Tolpoortbrug",
+      "gemeenten": "Deinze",
+      "coordinates": [
+        50.9840526,
+        3.5274017
+      ],
+      "geocoding_info": {
+        "query_used": "Deinze, Belgium",
+        "name": "Deinze, Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5140490078978913
+      },
+      "budgets": {
+        "budget_2025": 100000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 7015000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 154,
+      "naam": "Herbouw van 3 bruggen over de Zenne",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 813462.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Bruggen",
+      "gemeenten": "Vilvoorde",
+      "coordinates": [
+        50.830359,
+        4.2272455
+      ],
+      "geocoding_info": {
+        "query_used": "Bruggen, Vilvoorde, Belgium",
+        "name": "De Zeventien Bruggen, Armveldweg, Itterbeek, Dilbeek, Halle-Vilvoorde, Vlaams-Brabant, Vlaanderen, 1701, België / Belgique / Belgien",
+        "type": "bridge",
+        "class": "man_made",
+        "importance": 0.14170341258693808
+      },
+      "budgets": {
+        "budget_2025": 13462.0,
+        "budget_2026": 800000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 155,
+      "naam": "Herbouw Waasmunsterbrug (incl. jaagpad & fietstunnel)",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 6820000.0,
+      "infrastructuur_type": "fietsinfrastructuur; bruggen; tunnels; waterinfrastructuur",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "Herbouw Waasmunsterbrug",
+      "gemeenten": "Waasmunster",
+      "coordinates": [
+        51.1186217,
+        4.0785953
+      ],
+      "geocoding_info": {
+        "query_used": "Waasmunster, Belgium",
+        "name": "Waasmunster, Dendermonde, Oost-Vlaanderen, Vlaanderen, 9250, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.47355053267340924
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 6200000.0,
+        "budget_2027": 620000.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 156,
+      "naam": "Herbouw wegbruggen N116 Mol-ter-Nete",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 191458.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "bouw; herbouw",
+      "infrastructuur_naam": "N116",
+      "gemeenten": "Mol",
+      "coordinates": [
+        51.1840421,
+        5.1155267
+      ],
+      "geocoding_info": {
+        "query_used": "N116, Mol, Belgium",
+        "name": "Mol, Turnhout, Antwerpen, 2400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5088311767710108
+      },
+      "budgets": {
+        "budget_2025": 191458.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 157,
+      "naam": "Herstellen van de Winketbrug te Mechelen",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1428767.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "herstel; herstellen",
+      "infrastructuur_naam": "Herstellen Van De Winketbrug",
+      "gemeenten": "Mechelen",
+      "coordinates": [
+        51.0281381,
+        4.4803453
+      ],
+      "geocoding_info": {
+        "query_used": "Mechelen, Belgium",
+        "name": "Mechelen, Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6119715642025644
+      },
+      "budgets": {
+        "budget_2025": 1428767.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 158,
+      "naam": "Herstelling Sint-Annabrug Aalst",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "herstel; herstelling",
+      "infrastructuur_naam": "Annabrug",
+      "gemeenten": "Aalst",
+      "coordinates": [
+        50.9383226,
+        4.0392147
+      ],
+      "geocoding_info": {
+        "query_used": "Aalst, Belgium",
+        "name": "Aalst, Oost-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5574803609214694
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 160,
+      "naam": "Onderhoud spoorwegbruggen",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1476703.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "onderhoud",
+      "infrastructuur_naam": "Onderhoud Spoorwegbruggen",
+      "gemeenten": "",
+      "coordinates": [
+        50.7149619,
+        3.2712941
+      ],
+      "geocoding_info": {
+        "query_used": "spoorweg, Belgium",
+        "name": "Chemin de Fer - Spoorweg, Évregnies, Estaimpuis, Tournai-Mouscron, Hainaut, Wallonie, 7730, België / Belgique / Belgien",
+        "type": "trunk",
+        "class": "highway",
+        "importance": 0.053392549782558904
+      },
+      "budgets": {
+        "budget_2025": 626703.0,
+        "budget_2026": 400000.0,
+        "budget_2027": 450000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 163,
+      "naam": "Renovatie fietsbrug Noordlandbrug",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 500000.0,
+      "infrastructuur_type": "fietsinfrastructuur; bruggen",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Renovatie Fietsbrug Noordlandbrug",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 500000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 165,
+      "naam": "Stabiliseren talud van de Zuid Willemsvaart nabij brug Smeermaas",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1280000.0,
+      "infrastructuur_type": "bruggen; waterinfrastructuur",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "Stabiliseren Talud Van De Zuid Willemsvaart Nabij Brug",
+      "gemeenten": "Lanaken",
+      "coordinates": [
+        50.8892784,
+        5.6513208
+      ],
+      "geocoding_info": {
+        "query_used": "Lanaken, Belgium",
+        "name": "Lanaken, Tongeren, Limburg, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4750360187462724
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 1280000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 166,
+      "naam": "Structurele renovatie Boudewijnbrug te Brugge",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 200000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Structurele Renovatie Boudewijnbrug",
+      "gemeenten": "Brugge",
+      "coordinates": [
+        51.2085526,
+        3.226772
+      ],
+      "geocoding_info": {
+        "query_used": "Brugge, Belgium",
+        "name": "Brugge, West-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6628296306360398
+      },
+      "budgets": {
+        "budget_2025": 200000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 167,
+      "naam": "Structurele renovatie sasbrug Lembeek",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 20000.0,
+      "infrastructuur_type": "bruggen; waterinfrastructuur",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Structurele Renovatie Sasbrug",
+      "gemeenten": "Halle",
+      "coordinates": [
+        50.7360524,
+        4.2374349
+      ],
+      "geocoding_info": {
+        "query_used": "Halle, Belgium",
+        "name": "Halle, Halle-Vilvoorde, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5191648381060103
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 20000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 169,
+      "naam": "Vervangen opleggingen Drongenbrug W4 over de Ringvaart te Gent",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 250000.0,
+      "infrastructuur_type": "bruggen; waterinfrastructuur",
+      "werk_type": "vervangen",
+      "infrastructuur_naam": "Vervangen Opleggingen Drongenbrug",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0305202,
+        3.6999177
+      ],
+      "geocoding_info": {
+        "query_used": "de Ringvaart, Gent, Belgium",
+        "name": "Ringvaart om Gent, Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "canal",
+        "class": "waterway",
+        "importance": 0.32968232841773404
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 250000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 171,
+      "naam": "Vervanging van baileybrug nr. 1 Blauwe kei te Lommel",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "vervanging",
+      "infrastructuur_naam": "Vervanging Van Baileybrug",
+      "gemeenten": "Lommel",
+      "coordinates": [
+        51.2305657,
+        5.3076895
+      ],
+      "geocoding_info": {
+        "query_used": "Lommel, Belgium",
+        "name": "Lommel, Maaseik, Limburg, Vlaanderen, 3920, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5083949270646599
+      },
+      "budgets": {
+        "budget_2025": 100000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 900000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 172,
+      "naam": "Wegwerken nautisch knelpunt Waggelwaterbrug Brugge",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1254815.0,
+      "infrastructuur_type": "bruggen; waterinfrastructuur",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "Wegwerken Nautisch Knelpunt Waggelwaterbrug",
+      "gemeenten": "Brugge",
+      "coordinates": [
+        51.2085526,
+        3.226772
+      ],
+      "geocoding_info": {
+        "query_used": "Brugge, Belgium",
+        "name": "Brugge, West-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6628296306360398
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 1254815.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 175,
+      "naam": "Realisatie uitbreiding sanitair gebouw",
+      "verantwoordelijke": "Agentschap voor Maritieme Dienstverlening en Kust",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "uitbreiding; bouw",
+      "infrastructuur_naam": "",
+      "gemeenten": "Nieuwpoort",
+      "coordinates": [
+        51.1294306,
+        2.751666
+      ],
+      "geocoding_info": {
+        "query_used": "Nieuwpoort, Belgium",
+        "name": "Nieuwpoort, Veurne, West-Vlaanderen, 8620, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5251167310900315
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 186,
+      "naam": "Onderhoudscentra Antwerpen PAL dakwerkstand",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 500000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "onderhoud; onderhoudscentra",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 500000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 187,
+      "naam": "Onderhoudscentra Antwerpen PAL wielendraaibank",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1400000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "onderhoud; onderhoudscentra",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 1400000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 188,
+      "naam": "Stelplaats Antwerpen - Deurne Tram-uitbreiding",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 2000000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "uitbreiding; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 2000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 189,
+      "naam": "Stelplaats Asse",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 160000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Asse",
+      "coordinates": [
+        50.9094333,
+        4.2015646
+      ],
+      "geocoding_info": {
+        "query_used": "Asse, Belgium",
+        "name": "Asse, Halle-Vilvoorde, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4954289492656904
+      },
+      "budgets": {
+        "budget_2025": 160000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 192,
+      "naam": "Stelplaats Heist-op-den-Berg",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1800000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Heist-op-den-Berg",
+      "coordinates": [
+        51.0759905,
+        4.7286753
+      ],
+      "geocoding_info": {
+        "query_used": "Heist-op-den-Berg, Belgium",
+        "name": "Heist-op-den-Berg, Mechelen, Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4912528536743254
+      },
+      "budgets": {
+        "budget_2025": 1800000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 193,
+      "naam": "Stelplaats Heist-op-den-Berg - studiekost",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 364000.0,
+      "infrastructuur_type": "onbekend",
+      "werk_type": "studie; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Heist-op-den-Berg",
+      "coordinates": [
+        51.0759905,
+        4.7286753
+      ],
+      "geocoding_info": {
+        "query_used": "Heist-op-den-Berg, Belgium",
+        "name": "Heist-op-den-Berg, Mechelen, Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4912528536743254
+      },
+      "budgets": {
+        "budget_2025": 364000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 194,
+      "naam": "Stelplaats Oostende",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 6600000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Oostende",
+      "coordinates": [
+        51.2258565,
+        2.919496
+      ],
+      "geocoding_info": {
+        "query_used": "Oostende, Belgium",
+        "name": "Oostende, West-Vlaanderen, Vlaanderen, 8400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.617867154699062
+      },
+      "budgets": {
+        "budget_2025": 6600000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 195,
+      "naam": "Stelplaats Oostende - studie",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 680000.0,
+      "infrastructuur_type": "onbekend",
+      "werk_type": "studie; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Oostende",
+      "coordinates": [
+        51.2258565,
+        2.919496
+      ],
+      "geocoding_info": {
+        "query_used": "Oostende, Belgium",
+        "name": "Oostende, West-Vlaanderen, Vlaanderen, 8400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.617867154699062
+      },
+      "budgets": {
+        "budget_2025": 680000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 196,
+      "naam": "Stelplaatsaanleg Antwerpen - Hoboken",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 3840000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "aanleg; studie; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 3840000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 197,
+      "naam": "Stelplaatsaanleg Asse",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 27600.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "aanleg; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Asse",
+      "coordinates": [
+        50.9094333,
+        4.2015646
+      ],
+      "geocoding_info": {
+        "query_used": "Asse, Belgium",
+        "name": "Asse, Halle-Vilvoorde, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4954289492656904
+      },
+      "budgets": {
+        "budget_2025": 27600.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 198,
+      "naam": "Stelplaatsvernieuwing 2 Dieseltanks Kortrijk",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 260488.03,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; stelplaatsvernieuwing; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Kortrijk",
+      "coordinates": [
+        50.8276429,
+        3.2659884
+      ],
+      "geocoding_info": {
+        "query_used": "Kortrijk, Belgium",
+        "name": "Kortrijk, West-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5930709421048221
+      },
+      "budgets": {
+        "budget_2025": 260488.03,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 199,
+      "naam": "Stelplaatsvernieuwing Antwerpen - Hoboken Halteploeg",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 20000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; stelplaatsvernieuwing; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 20000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 200,
+      "naam": "Stelplaatsvernieuwing Destelbergen - Vernieuwen Heating Ventilation and Air Conditioning en Gebouwbeheersstemen",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 175000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "bouw; vernieuwing; stelplaatsvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Destelbergen",
+      "coordinates": [
+        51.0378815,
+        3.8134662
+      ],
+      "geocoding_info": {
+        "query_used": "Destelbergen, Belgium",
+        "name": "Destelbergen, Gent, Oost-Vlaanderen, 9070, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.47129934849029037
+      },
+      "budgets": {
+        "budget_2025": 175000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 201,
+      "naam": "Stelplaatsvernieuwing Gentbrugge Nieuwe werkput Albatros",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1772000.0,
+      "infrastructuur_type": "bruggen",
+      "werk_type": "vernieuwing; stelplaatsvernieuwing; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Gent",
+      "coordinates": [
+        51.0538286,
+        3.7250121
+      ],
+      "geocoding_info": {
+        "query_used": "Gent, Belgium",
+        "name": "Gent, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6825134473857584
+      },
+      "budgets": {
+        "budget_2025": 1772000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 202,
+      "naam": "Stelplaatsvernieuwing Kessel-Lo - dakstructuur verstevigen",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 210000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; stelplaatsvernieuwing; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Leuven",
+      "coordinates": [
+        50.879202,
+        4.7011675
+      ],
+      "geocoding_info": {
+        "query_used": "Leuven, Belgium",
+        "name": "Leuven, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6417132046506865
+      },
+      "budgets": {
+        "budget_2025": 210000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 203,
+      "naam": "Stelplaatsvernieuwing Kessel-Lo - vernieuwen Heating Ventilation and Air Conditioning en Gebouwbeheersstemen",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 220000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "bouw; vernieuwing; stelplaatsvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Leuven",
+      "coordinates": [
+        50.879202,
+        4.7011675
+      ],
+      "geocoding_info": {
+        "query_used": "Leuven, Belgium",
+        "name": "Leuven, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6417132046506865
+      },
+      "budgets": {
+        "budget_2025": 220000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 204,
+      "naam": "Stelplaatsvernieuwing Oostende - Dakwerkstand CAF",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 230000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; stelplaatsvernieuwing; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Oostende",
+      "coordinates": [
+        51.2258565,
+        2.919496
+      ],
+      "geocoding_info": {
+        "query_used": "Oostende, Belgium",
+        "name": "Oostende, West-Vlaanderen, Vlaanderen, 8400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.617867154699062
+      },
+      "budgets": {
+        "budget_2025": 230000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 205,
+      "naam": "Stelplaatsvernieuwing Oostende - Vernieuwen Heating Ventilation and Air Conditioning en Gebouwbeheersstemen",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 225000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "bouw; vernieuwing; stelplaatsvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Oostende",
+      "coordinates": [
+        51.2258565,
+        2.919496
+      ],
+      "geocoding_info": {
+        "query_used": "Oostende, Belgium",
+        "name": "Oostende, West-Vlaanderen, Vlaanderen, 8400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.617867154699062
+      },
+      "budgets": {
+        "budget_2025": 225000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 206,
+      "naam": "Stelplaatsvernieuwing Sint-Lievens-Houtem - Dieseltank",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 90000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; stelplaatsvernieuwing; stelplaats",
+      "infrastructuur_naam": "",
+      "gemeenten": "Sint-Lievens-Houtem",
+      "coordinates": [
+        50.9204857,
+        3.8589196
+      ],
+      "geocoding_info": {
+        "query_used": "Sint-Lievens-Houtem, Belgium",
+        "name": "Sint-Lievens-Houtem, Aalst, Oost-Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4713857410046721
+      },
+      "budgets": {
+        "budget_2025": 90000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 207,
+      "naam": "Stelplaatsvernieuwing Turnhout- Vernieuwen Heating Ventilation and Air Conditioning en Gebouwbeheersstemen",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 175000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "bouw; vernieuwing; stelplaatsvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Turnhout",
+      "coordinates": [
+        51.328932,
+        4.9299924
+      ],
+      "geocoding_info": {
+        "query_used": "Turnhout, Belgium",
+        "name": "Turnhout, Antwerpen, Vlaanderen, 2300, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5453278121324316
+      },
+      "budgets": {
+        "budget_2025": 175000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 212,
+      "naam": "Bodemsaneringswerken van terreinen in beheer bij de Vlaamse Waterweg nv",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 305000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "beheer",
+      "infrastructuur_naam": "",
+      "gemeenten": "",
+      "coordinates": [
+        50.7832243,
+        5.0953008
+      ],
+      "geocoding_info": {
+        "query_used": "Waterweg, Belgium",
+        "name": "Waterweg, Neerlanden, Zoutleeuw, Leuven, Vlaams-Brabant, Vlaanderen, 3440, België / Belgique / Belgien",
+        "type": "unclassified",
+        "class": "highway",
+        "importance": 0.053388112458991346
+      },
+      "budgets": {
+        "budget_2025": 305000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 217,
+      "naam": "Watersite",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 650000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "",
+      "gemeenten": "Vilvoorde",
+      "coordinates": [
+        50.928711,
+        4.423126
+      ],
+      "geocoding_info": {
+        "query_used": "Vilvoorde, Belgium",
+        "name": "Vilvoorde, Halle-Vilvoorde, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5272392807308987
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 650000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 218,
+      "naam": "BS. Renovatie sluizen Asper, Oudenaarde en Kerkhove",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 1826000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "renovatie; studie",
+      "infrastructuur_naam": "",
+      "gemeenten": "Oudenaarde",
+      "coordinates": [
+        50.8433705,
+        3.6041443
+      ],
+      "geocoding_info": {
+        "query_used": "Oudenaarde, Belgium",
+        "name": "Oudenaarde, Oost-Vlaanderen, 9700, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.5526948720729637
+      },
+      "budgets": {
+        "budget_2025": 1826000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 221,
+      "naam": "Re-engineering pompstation en sluis Bossuit",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 2800000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "engineering",
+      "infrastructuur_naam": "Re-Engineering Pompstation En (Sluis)",
+      "gemeenten": "Zwevegem",
+      "coordinates": [
+        50.7828566,
+        3.3755864
+      ],
+      "geocoding_info": {
+        "query_used": "Zwevegem, Belgium",
+        "name": "Zwevegem, Kortrijk, West-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.48043304280808036
+      },
+      "budgets": {
+        "budget_2025": 2000000.0,
+        "budget_2026": 800000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 222,
+      "naam": "Re-engineering sluis Denderbelle",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 200000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "engineering",
+      "infrastructuur_naam": "Re-Engineering (Sluis)",
+      "gemeenten": "Lebbeke",
+      "coordinates": [
+        51.0004013,
+        4.1307711
+      ],
+      "geocoding_info": {
+        "query_used": "Lebbeke, Belgium",
+        "name": "Lebbeke, Dendermonde, Oost-Vlaanderen, Vlaanderen, 9280, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.477044026602106
+      },
+      "budgets": {
+        "budget_2025": 200000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 223,
+      "naam": "Re-engineering turbine sluis Wijnegem",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 260000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "engineering",
+      "infrastructuur_naam": "Re-Engineering Turbine (Sluis)",
+      "gemeenten": "Wijnegem",
+      "coordinates": [
+        51.2270761,
+        4.5225318
+      ],
+      "geocoding_info": {
+        "query_used": "Wijnegem, Belgium",
+        "name": "Wijnegem, Antwerpen, 2110, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.47696489530096137
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 260000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 224,
+      "naam": "Renovatie Dampoortsluis",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 522000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Renovatie Dampoort (Sluis)",
+      "gemeenten": "Brugge",
+      "coordinates": [
+        51.2085526,
+        3.226772
+      ],
+      "geocoding_info": {
+        "query_used": "Brugge, Belgium",
+        "name": "Brugge, West-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.6628296306360398
+      },
+      "budgets": {
+        "budget_2025": 522000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 225,
+      "naam": "Renovatie rails roldeuren sluis Wintam",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 3000000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Renovatie Rails Roldeuren (Sluis)",
+      "gemeenten": "Bornem",
+      "coordinates": [
+        51.0953014,
+        4.2341308
+      ],
+      "geocoding_info": {
+        "query_used": "Bornem, Belgium",
+        "name": "Bornem, Mechelen, Antwerpen, 2880, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4943797882789724
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 3000000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 228,
+      "naam": "Structurele herstelling grote sluis Evergem",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 23807.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "herstel; herstelling",
+      "infrastructuur_naam": "Structurele Herstelling Grote (Sluis)",
+      "gemeenten": "Evergem",
+      "coordinates": [
+        51.1429961,
+        3.7108214
+      ],
+      "geocoding_info": {
+        "query_used": "Evergem, Belgium",
+        "name": "Evergem, Gent, Oost-Vlaanderen, 9940, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4758064447863659
+      },
+      "budgets": {
+        "budget_2025": 23807.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 229,
+      "naam": "Vervangen sluisdeuren sluis Geraardsbergen",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 700000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "vervangen",
+      "infrastructuur_naam": "Vervangen Sluisdeuren (Sluis)",
+      "gemeenten": "Geraardsbergen",
+      "coordinates": [
+        50.7715779,
+        3.8827287
+      ],
+      "geocoding_info": {
+        "query_used": "Geraardsbergen, Belgium",
+        "name": "Geraardsbergen, Aalst, Oost-Vlaanderen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.518896765448107
+      },
+      "budgets": {
+        "budget_2025": 700000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 230,
+      "naam": "Vervangen sluisdeuren sluizen Briegden en Neerharen",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 2424000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "vervangen",
+      "infrastructuur_naam": "Vervangen (Sluis)",
+      "gemeenten": "Lanaken",
+      "coordinates": [
+        50.8892784,
+        5.6513208
+      ],
+      "geocoding_info": {
+        "query_used": "Lanaken, Belgium",
+        "name": "Lanaken, Tongeren, Limburg, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.4750360187462724
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 2400000.0,
+        "budget_2027": 24000.0
+      },
+      "investment_start_year": 2026,
+      "year_color": "#3f334d"
+    },
+    {
+      "id": 231,
+      "naam": "Zeekanaal Brussel-Schelde: Renovatie sluisdeuren sluis Wintam",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 3100000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Zee (Kanaal)",
+      "gemeenten": "Brussel; Bornem",
+      "coordinates": [
+        50.8465573,
+        4.351697
+      ],
+      "geocoding_info": {
+        "query_used": "Brussel, Belgium",
+        "name": "Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7287064307930603
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 3100000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 232,
+      "naam": "Zeekanaal Brussel-Schelde: Renovatie sluisdeuren Zemst.",
+      "verantwoordelijke": "De Vlaamse Waterweg",
+      "bedrag": 7100000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "renovatie",
+      "infrastructuur_naam": "Zee (Kanaal)",
+      "gemeenten": "Brussel; Zemst",
+      "coordinates": [
+        50.8465573,
+        4.351697
+      ],
+      "geocoding_info": {
+        "query_used": "Brussel, Belgium",
+        "name": "Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7287064307930603
+      },
+      "budgets": {
+        "budget_2025": 2100000.0,
+        "budget_2026": 4000000.0,
+        "budget_2027": 1000000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 233,
+      "naam": "Beschikbaarheidsvergoeding Kieldrechtsluis",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 54165075.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "Beschikbaarheidsvergoeding Kieldrecht (Sluis)",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 18055025.0,
+        "budget_2026": 18055025.0,
+        "budget_2027": 18055025.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 234,
+      "naam": "Instandhouding Berendrecht- en Zandvliet sluizencomplex",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 16157000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "instandhouding",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 2420000.0,
+        "budget_2026": 3751000.0,
+        "budget_2027": 9986000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 235,
+      "naam": "Instandhouding Boudewijn- en Van Cauwelaert sluizencomplex",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 5905000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "instandhouding",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 880000.0,
+        "budget_2026": 1815000.0,
+        "budget_2027": 3210000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 236,
+      "naam": "Instandhouding Demeysluis",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 1800000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "instandhouding",
+      "infrastructuur_naam": "Instandhouding Demey (Sluis)",
+      "gemeenten": "Oostende",
+      "coordinates": [
+        51.2258565,
+        2.919496
+      ],
+      "geocoding_info": {
+        "query_used": "Oostende, Belgium",
+        "name": "Oostende, West-Vlaanderen, Vlaanderen, 8400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.617867154699062
+      },
+      "budgets": {
+        "budget_2025": 1800000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 237,
+      "naam": "Instandhouding Doksluis",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 15000000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "instandhouding",
+      "infrastructuur_naam": "Instandhouding Dok (Sluis)",
+      "gemeenten": "Oostende",
+      "coordinates": [
+        51.2258565,
+        2.919496
+      ],
+      "geocoding_info": {
+        "query_used": "Oostende, Belgium",
+        "name": "Oostende, West-Vlaanderen, Vlaanderen, 8400, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.617867154699062
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 15000000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 238,
+      "naam": "Instandhouding Kallosluis",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 5767248.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "instandhouding",
+      "infrastructuur_naam": "Instandhouding Kallo (Sluis)",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 3981248.0,
+        "budget_2027": 786000.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 239,
+      "naam": "Instandhouding Kieldrechtsluis",
+      "verantwoordelijke": "Departement Mobiliteit en Openbare Werken",
+      "bedrag": 4300000.0,
+      "infrastructuur_type": "waterinfrastructuur",
+      "werk_type": "instandhouding",
+      "infrastructuur_naam": "Instandhouding Kieldrecht (Sluis)",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 0.0,
+        "budget_2026": 0.0,
+        "budget_2027": 4300000.0
+      },
+      "investment_start_year": 2027,
+      "year_color": "#c1809d"
+    },
+    {
+      "id": 241,
+      "naam": "Antwerpen - Spoorrevisie / vernieuwing",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 2303627.07,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 2303627.07,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 242,
+      "naam": "Competence center Traminfra Hoboken",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 750000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "onbekend",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 750000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 243,
+      "naam": "Monitoring spoorinfrastructuur",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 100000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "monitoring",
+      "infrastructuur_naam": "",
+      "gemeenten": "",
+      "coordinates": [
+        50.8839109,
+        4.7145201
+      ],
+      "geocoding_info": {
+        "query_used": "Monitoring, Belgium",
+        "name": "Departement Landbouw en Visserij - Afdeling Monitoring en Studie, 6/101, Diestsepoort, Sint-Maartensdal, Leuven, Vlaams-Brabant, Vlaanderen, 3000, België / Belgique / Belgien",
+        "type": "house",
+        "class": "place",
+        "importance": 6.952849622334657e-05
+      },
+      "budgets": {
+        "budget_2025": 100000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 246,
+      "naam": "Prefinanciering Antwerpen",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1440000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "prefinanciering",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 1440000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 248,
+      "naam": "Spooraanleg Antwerpen - Kerkstraat-Pothoekstraat",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 10135000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "aanleg",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.3027319,
+        4.3943373
+      ],
+      "geocoding_info": {
+        "query_used": "Kerkstraat, Antwerpen, Belgium",
+        "name": "Kerkstraat, Hoevenen, Stabroek, Antwerpen, Vlaanderen, 2940, België / Belgique / Belgien",
+        "type": "secondary",
+        "class": "highway",
+        "importance": 0.053411676966506415
+      },
+      "budgets": {
+        "budget_2025": 9755000.0,
+        "budget_2026": 380000.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 249,
+      "naam": "Spooraanleg Antwerpen - Wissels nationale bank",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 2600000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "aanleg",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 2600000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 250,
+      "naam": "Spoorvernieuwing Antwerpen - Bochten",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 852000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 852000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 251,
+      "naam": "Spoorvernieuwing Antwerpen - Boekenberglei",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 600000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 600000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 252,
+      "naam": "Spoorvernieuwing Antwerpen - Grotesteenweg Extra Muros/Mortsel",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.1862334,
+        4.4293951
+      ],
+      "geocoding_info": {
+        "query_used": "- Grotesteenweg, Antwerpen, Belgium",
+        "name": "Grotesteenweg, De Veldekens, Nieuw Kwartier, Berchem, Antwerpen, Vlaanderen, 2600, België / Belgique / Belgien",
+        "type": "primary",
+        "class": "highway",
+        "importance": 0.053411676966506415
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 253,
+      "naam": "Spoorvernieuwing Antwerpen - Grotesteenweg Harmonie",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1400000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.1862334,
+        4.4293951
+      ],
+      "geocoding_info": {
+        "query_used": "- Grotesteenweg, Antwerpen, Belgium",
+        "name": "Grotesteenweg, De Veldekens, Nieuw Kwartier, Berchem, Antwerpen, Vlaanderen, 2600, België / Belgique / Belgien",
+        "type": "primary",
+        "class": "highway",
+        "importance": 0.053411676966506415
+      },
+      "budgets": {
+        "budget_2025": 1400000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 254,
+      "naam": "Spoorvernieuwing Antwerpen - Herentalsebaan II",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 725533.31,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2095403,
+        4.4562986
+      ],
+      "geocoding_info": {
+        "query_used": "Herentalsebaan II, Antwerpen, Belgium",
+        "name": "Herentalsebaan, Morckhoven, Deurne-Zuid, Deurne, Antwerpen, Vlaanderen, 2100, België / Belgique / Belgien",
+        "type": "secondary",
+        "class": "highway",
+        "importance": 0.053411676966506415
+      },
+      "budgets": {
+        "budget_2025": 725533.31,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 255,
+      "naam": "Spoorvernieuwing Antwerpen - Hoboken Antwerpsesteenweg",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 7900000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.1804193,
+        4.3660937
+      ],
+      "geocoding_info": {
+        "query_used": "Hoboken Antwerpsesteenweg, Antwerpen, Belgium",
+        "name": "Jan Van de Wouwer, Antwerpsesteenweg, Zwaantjes, Hoboken, Antwerpen, 2660, België / Belgique / Belgien",
+        "type": "platform",
+        "class": "railway",
+        "importance": 7.83436331730681e-05
+      },
+      "budgets": {
+        "budget_2025": 7900000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 256,
+      "naam": "Spoorvernieuwing Antwerpen - Lelieplaats",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 365000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.2211097,
+        4.3997081
+      ],
+      "geocoding_info": {
+        "query_used": "Antwerpen, Belgium",
+        "name": "Antwerpen, Vlaanderen, België / Belgique / Belgien",
+        "type": "administrative",
+        "class": "boundary",
+        "importance": 0.7324045363590299
+      },
+      "budgets": {
+        "budget_2025": 365000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    },
+    {
+      "id": 257,
+      "naam": "Spoorvernieuwing Antwerpen - Mechelsesteenweg",
+      "verantwoordelijke": "De Lijn",
+      "bedrag": 1000000.0,
+      "infrastructuur_type": "overig",
+      "werk_type": "vernieuwing; spoorvernieuwing",
+      "infrastructuur_naam": "",
+      "gemeenten": "Antwerpen",
+      "coordinates": [
+        51.201657,
+        4.4129299
+      ],
+      "geocoding_info": {
+        "query_used": "- Mechelsesteenweg, Antwerpen, Belgium",
+        "name": "Mechelsesteenweg, Haringrode, Antwerpen, Vlaanderen, 2018, België / Belgique / Belgien",
+        "type": "tertiary",
+        "class": "highway",
+        "importance": 0.1898927655395688
+      },
+      "budgets": {
+        "budget_2025": 1000000.0,
+        "budget_2026": 0.0,
+        "budget_2027": 0.0
+      },
+      "investment_start_year": 2025,
+      "year_color": "#ff4000"
+    }
+  ]
+}
