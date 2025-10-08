@@ -65,12 +65,7 @@ class GIPDashboard {
             return;
         }
         
-        if (!this.geocodedProjects || this.geocodedProjects.length === 0) {
-            console.warn('No geocoded projects loaded yet');
-            return;
-        }
-        
-        console.log('Initializing map with', this.geocodedProjects.length, 'geocoded projects');
+        console.log('Initializing map with', this.geocodedProjects?.length || 0, 'geocoded projects');
         
         // Initialize Leaflet map with restricted bounds for Flanders/Belgium
         const belgiumBounds = [
@@ -94,7 +89,12 @@ class GIPDashboard {
             maxZoom: 18
         }).addTo(this.map);
         
-        this.updateMapMarkers();
+        // Update markers if we have geocoded projects
+        if (this.geocodedProjects && this.geocodedProjects.length > 0) {
+            this.updateMapMarkers();
+        } else {
+            console.warn('No geocoded projects available to display on map');
+        }
     }
     
     updateGlobalStats(stats) {
