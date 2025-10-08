@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIP 2025-2027 | Geïntegreerd Investeringsprogramma</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Geïntegreerd Investeringsprogramma 2025-2027</h1>
+            <p class="subtitle">Beleidsdomein Mobiliteit en Openbare Werken Vlaanderen</p>
+        </header>
+
+        <div class="info-box">
+            <h3>Over het Geïntegreerd Investeringsprogramma</h3>
+            <p>Het GIP bundelt alle investeringen van het beleidsdomein MOW in een gemeenschappelijk kader dat financieel onderbouwd is en beleidsmatig wordt afgestemd. De 7 entiteiten van het beleidsdomein investeren jaarlijk in infrastructuurprojecten voor vracht- en personenverkeer, openbaar vervoer, fietsen, binnenvaart en waterbeheersing.</p>
+            <p><strong>Beleidsdoelstellingen:</strong></p>
+            <ul>
+                <li>Asset management voor performante infrastructuur</li>
+                <li>Grote infrastructuurprojecten voor de verschillende modi</li>
+                <li>Investeringen in verkeersveiligheid</li>
+                <li>Duurzaam personenvervoer en modal shift</li>
+                <li>Duurzaam goederenvervoer</li>
+                <li>Waterbeheersing</li>
+                <li>Regionale luchthavens</li>
+            </ul>
+        </div>
+
+        <!-- Statistics Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-label">Totaal Investeringsprojecten</div>
+                    <div class="stat-value" id="total-projects">-</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-label">Investeringsbudget 2025</div>
+                    <div class="stat-value" id="budget-2025">-</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-label">Investeringsbudget 2026</div>
+                    <div class="stat-value" id="budget-2026">-</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-label">Investeringsbudget 2027</div>
+                    <div class="stat-value" id="budget-2027">-</div>
+                </div>
+            </div>
+            <div class="stat-card highlight">
+                <div class="stat-content">
+                    <div class="stat-label">Totaal Investeringsbudget 2025-2027</div>
+                    <div class="stat-value" id="total-budget">-</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <h2>Geografische Weergave Investeringsprojecten</h2>
+            <p style="margin-bottom: 1rem; color: #6c757d; font-size: 0.9rem;">
+                <strong>Let op:</strong> Van de 778 investeringsprojecten kunnen er 570 op de kaart weergegeven worden. 
+                Voor de overige projecten ontbreekt voldoende locatie-informatie. De geografische posities zijn deels 
+                automatisch bepaald op basis van locatienamen en gemeenten, waardoor er onnauwkeurigheden kunnen voorkomen.
+            </p>
+            <div class="map-controls">
+                <button id="show-all-map" class="btn-secondary active">Alle projecten</button>
+                <button id="show-filtered-map" class="btn-secondary">Gefilterde selectie</button>
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #ff4000;"></span>
+                        <span>2025</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #3f334d;"></span>
+                        <span>2026</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #c1809d;"></span>
+                        <span>2027</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-marker" style="background: #bababa;"></span>
+                        <span>Geen budget</span>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-section">
+            <h2>Filters en Zoekopdrachten</h2>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="search">Zoeken</label>
+                    <input type="text" id="search" placeholder="Zoek op projectnaam, locatie, gemeente...">
+                </div>
+                <div class="filter-group">
+                    <label for="filter-programma">Programma</label>
+                    <select id="filter-programma">
+                        <option value="">Alle programma's</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-entiteit">Entiteit</label>
+                    <select id="filter-entiteit">
+                        <option value="">Alle entiteiten</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-infrastructuur">Infrastructuur</label>
+                    <select id="filter-infrastructuur">
+                        <option value="">Alle types</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-startjaar">Startjaar</label>
+                    <select id="filter-startjaar">
+                        <option value="">Alle jaren</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="null">Geen budget</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-gemeente">Gemeente</label>
+                    <input type="text" id="filter-gemeente" placeholder="Filter op gemeente...">
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button id="reset-filters" class="btn-secondary">Reset filters</button>
+                <button id="export-csv" class="btn-primary">Exporteer naar CSV</button>
+                <a href="../web/index.html" class="btn-map">Geografische kaartweergave</a>
+            </div>
+        </div>
+
+        <!-- Results Info -->
+        <div class="results-info">
+            <span id="results-count">-</span> investeringsprojecten gevonden
+            <span class="filtered-budget">Totaal budget gefilterde selectie: <strong id="filtered-budget">-</strong></span>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table id="projects-table">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-column="id">ID</th>
+                        <th class="sortable" data-column="project_naam">Investeringsproject</th>
+                        <th class="sortable" data-column="entiteit">Entiteit</th>
+                        <th class="sortable" data-column="gemeenten">Gemeenten</th>
+                        <th class="sortable" data-column="infrastructuur_type">Infrastructuur</th>
+                        <th class="sortable numeric" data-column="budget_2025">Budget 2025</th>
+                        <th class="sortable numeric" data-column="budget_2026">Budget 2026</th>
+                        <th class="sortable numeric" data-column="budget_2027">Budget 2027</th>
+                        <th class="sortable numeric" data-column="totaal_budget">Totaal Budget</th>
+                        <th class="sortable" data-column="start_jaar">Startjaar</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Source -->
+        <div class="source">
+            <p><strong>Bron:</strong> Vlaamse Regering, Geïntegreerd Investeringsprogramma (GIP) 2025-2027, goedgekeurd op 14 juli 2025</p>
+            <p>Beleidsdomein Mobiliteit en Openbare Werken | Departement Mobiliteit en Openbare Werken</p>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button id="prev-page" class="btn-secondary">« Vorige</button>
+            <span id="page-info">-</span>
+            <button id="next-page" class="btn-secondary">Volgende »</button>
+            <select id="items-per-page">
+                <option value="25">25 per pagina</option>
+                <option value="50" selected>50 per pagina</option>
+                <option value="100">100 per pagina</option>
+                <option value="500">500 per pagina</option>
+                <option value="all">Alles tonen</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
