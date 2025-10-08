@@ -228,6 +228,19 @@ blockquote {
 .video-caption p {
     font-size: 1.25rem;
     opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.video-caption .budget-highlight {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 12px rgba(255, 64, 0, 0.3);
 }
 
 /* Map Sections */

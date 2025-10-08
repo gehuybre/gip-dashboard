@@ -1,0 +1,94 @@
+Multimedia selectie Vlaamse infrastructuurprojecten (GIP 2025-2029)
+
+Onderstaande lijst bevat per project een relevante video (in HTML5 iframe formaat, b.v. YouTube-embed) met een korte toelichting. Ook is een URL naar een thumbnail (stilbeeld/poster frame) voorzien voor gebruik als preview of poster-image. Alle media zijn afkomstig van officiële bronnen of nieuwsorganisaties en tonen de projecten visueel sterk, zonder noodzaak tot geluid. U kunt deze HTML-snippets rechtstreeks in de longread integreren.
+	•	Oosterweelverbinding (Antwerpen) – Timelapse van de plaatsing van de grote blauwgroene boogbrug voor de tijdelijke Bypass (Linkeroever) over het Albertkanaal. Toont de indrukwekkende operatie en schaal van de werf van de Oosterweelverbinding (bron: Lantis).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SkD3ByELFOg" title="Oosterweelverbinding (timelapse boogbrug Bypass)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/SkD3ByELFOg/hqdefault.jpg
+
+	•	Ring rond Brussel (R0) – Visualisatie / animatie van de herinrichting van het verkeersknooppunt R0 × A201 (vlakbij Brussels Airport). Dit “voor & na” toont hoe de nieuwe turbinetekening de doorstroming zal verbeteren, onderdeel van Werken aan de Ring (De Werkvennootschap).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qrBBvFzqwps" title="Ring rond Brussel (transformatie knooppunt R0 x A201)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/qrBBvFzqwps/hqdefault.jpg
+
+	•	R4 Gent (Oost & West) – Animatie van de ombouw van de R4 West in zone Wondelgem. Deze video toont hoe gelijkvloerse kruispunten worden vervangen door bruggen en tunnels. Relevante illustratie van de R4WO-werken, die de verkeersveiligheid en doorstroming rond de Gentse haven fors zullen verbeteren (bron: R4WO/De Werkvennootschap).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bPUOMcMp474" title="R4 Gent (ombouw R4 West, zone Wondelgem)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/bPUOMcMp474/hqdefault.jpg
+
+	•	Tunnelrenovaties (vb. Leonardtunnel) – Video-reportage over de renovatie van de Leonardtunnel (R0/E411, Zaventem). Toont de werkzaamheden (vernieuwing waterdichting, brandwerende bekleding, technische installaties) in de tunnel. Dit is representatief voor de geplande renovaties van meerdere tunnels (zoals de Jan De Vostunnel) in Vlaanderen om de veiligheid te verhogen (bron: Agentschap Wegen & Verkeer).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xge5mFYOqmY" title="Tunnelrenovaties (Leonardtunnel R0/E411)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/xge5mFYOqmY/hqdefault.jpg
+
+	•	Nieuwe Sluis Zeebrugge – Officiële animatie van het ontwerp voor de nieuwe Visartsluis in Zeebrugge. Deze video van het Departement MOW / De Vlaamse Waterweg schetst hoe de tweede zeehaven-sluis eruit zal zien en functioneert. Ze is essentieel om de capaciteit van de haven te vergroten en de nautische toegankelijkheid te verzekeren.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FE9f6iPIHLU" title="Nieuwe sluis Zeebrugge (animatie ontwerp)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/FE9f6iPIHLU/hqdefault.jpg
+
+	•	Kanaal Gent–Terneuzen (Nieuwe Sluis Terneuzen) – Sfeerverslag van de opening van de Nieuwe Sluis in Terneuzen (2023–2024). Deze grootste zeesluis van de regio is recent in gebruik en de video (o.a. van Omroep Zeeland/VRT) toont scheepvaart door de sluis en de feestelijke inhuldiging door koning Filip en Willem-Alexander. Illustreert de voltooiing van een cruciaal project op de Gent-Terneuzen-as voor vlottere scheepvaart tussen Noordzee en Vlaanderen.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fFmvaywUeLw" title="Kanaal Gent-Terneuzen (opening Nieuwe Sluis Terneuzen)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/fFmvaywUeLw/hqdefault.jpg
+
+	•	Seine-Scheldeverbinding (Leie-as) – Kort reportagefilmpje over de renovatie van de sluis van Ooigem op het kanaal Roeselare-Leie (onderdeel van Seine-Schelde Vlaanderen). We zien o.a. de plaatsing van nieuwe sluisdeuren en modernisering van de techniek. Het illustreert de inspanningen om de Leie en omliggende kanalen geschikt te maken voor grotere klasse V-schepen en waterbeheersing (bron: De Vlaamse Waterweg).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2W7QNAoPvVw" title="Seine-Schelde (renovatie sluis Ooigem)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/2W7QNAoPvVw/hqdefault.jpg
+
+	•	Albertkanaal (brugverhogingen) – Compilatievideo met timelapse-beelden van het verhogen en vervangen van bruggen over het Albertkanaal (cluster 1 & 2, 2021–2022). Spectaculair om te zien hoe een oude brug (zoals in Paal-Tervant) wordt weggehaald en een nieuwe hogere stalen boogbrug per ponton wordt ingevaren en geplaatst. Toont de finale inspurt van dit langlopende project waarbij 62 bruggen zijn verhoogd voor vierlaags containertrafiek (bron: De Vlaamse Waterweg / Via T).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Im5KRXE_z98" title="Albertkanaal (brugverhogingen compilatie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/Im5KRXE_z98/hqdefault.jpg
+
+	•	Havenontwikkeling Antwerpen (ECA) – Projectvideo over de renovatie van de Europa Terminal in de Antwerpse haven (Port of Antwerp-Bruges). Deze video (door het havenbedrijf) laat zien hoe de 1,2 km lange kade wordt uitgebroken en verdiept, en hoe nieuwe kranen en walstroom worden voorzien. Dit vormt een belangrijk deel van de capaciteitsuitbreiding in de haven (naast het ECA-project voor een nieuw getijdendok) en illustreert duurzame havenontwikkeling (bv. minder CO₂ dankzij elektrificatie).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aVbAVozv_oU" title="Havenontwikkeling Antwerpen (Renovatie Europa Terminal)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/aVbAVozv_oU/hqdefault.jpg
+
+	•	Havenontwikkeling Oostende – Videoverslag van de eerste autotrein in de haven van Oostende (mei 2025). We zien hoe een goederentrein vol nieuwe auto’s aankomt op de vernieuwde spoorinfrastructuur in de haven (Tilbury-verbinding). Deze mijlpaalvideo (bron: Port Oostende) illustreert de diversificatie van de haven: de ontluikende short-sea shipping hub wordt nu ook via het spoor verbonden, een belangrijke investering in multimodaliteit.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CRfY2C3Ko-0" title="Havenontwikkeling Oostende (eerste autotrein)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/CRfY2C3Ko-0/hqdefault.jpg
+
+	•	Fietsinfrastructuur (fietssnelwegen) – Promo-video uit de reeks “10 jaar fietssnelwegen” – hier F24 Leuven–Tienen (Vlaams-Brabant). In deze korte film (gemaakt door het Provinciebestuur) zien we een vlotte, groene fietsroute langs de spoorlijn met nieuwe rode asfaltpaden, bruggen en tunnels. Dit illustreert de recente investeringen in fietssnelwegen en hoe ze steden en regio’s beter verbinden voor woon-werkverkeer per fiets.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ishQNmTE6jg" title="Fietsinfrastructuur (fietssnelweg F24 Leuven-Tienen)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/ishQNmTE6jg/hqdefault.jpg
+
+	•	Openbaar vervoer (De Lijn / Hoppinpunten) – Reportage over een nieuw Hoppinpunt (mobipunt) in Tremelo (Vinneweg). Deze video (door een regionale zender) toont de faciliteiten: een overdekte fietsstalling met oplaadpunten, een bushalte met realtime-infozuil, deelwagens en een pakjesautomaat. Het demonstreert hoe Hoppinpunten de combimobiliteit versterken door vlot over te stappen tussen bus, fiets en deelmobiliteit – een speerpunt van De Lijn en de vervoerregio’s.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DQrONX0Jka8" title="Openbaar vervoer (Hoppinpunt Tremelo)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/DQrONX0Jka8/hqdefault.jpg
+
+	•	Personenvervoer over water – Promovideo van de Waterbus in Antwerpen (uitgebaat door Blue Amigo i.s.m. De Vlaamse Waterweg). De beelden tonen de moderne veerboot die pendelaars en recreanten over de Schelde vervoert, van het stadshart (Steenplein) tot in de zuidrand (Hemiksem) en noordoostelijk havengebied. Het laat zien hoe deze vorm van OV op het water files helpt ontwijken en aansluit op tram, bus en fiets – een groeiende succesformule in stedelijke mobiliteit.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_rz47dGXa4U" title="Personenvervoer over water (Waterbus Antwerpen)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/_rz47dGXa4U/hqdefault.jpg
+
+	•	Waterbeheer (Dender- & Sigmaplan) – Projectvideo van het Sigmaplan (De Vlaamse Waterweg) over de werken in Vlassenbroek (Dendermonde). De clip toont hoe een gecontroleerd overstromingsgebied met ringdijk en in- en uitlaat gebouwd wordt langs de Schelde. Dit is relevant voor zowel het Sigmaplan (bescherming tegen stormvloeden) als het Denderplan (regionale waterhuishouding), en benadrukt ook de natuurontwikkeling die hiermee samenhangt.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sRQUF4YNV_8" title="Waterbeheer (Sigmaplan, GOG Vlassenbroek)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/sRQUF4YNV_8/hqdefault.jpg
+
+	•	Regionale luchthavens (Antwerpen/Oostende) – Achter-de-schermen video (timelapse-stijl) van de baanrenovatie op Luchthaven Oostende-Brugge (voorjaar 2024). We zien hoe de 3,2 km startbaan volledig nieuwe lagen asfalt en markeringen krijgt en 1200+ LED-insetlichten worden geïnstalleerd. De luchthaven is hierdoor klaar voor de toekomst (grotere toestellen, veilige operaties). Dit type infrastructuurwerk geldt ook voor Antwerpen (waar plannen voor een nieuwe verkeerstoren en baanupgrades lopen).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9Ftu0V8eOyk" title="Regionale luchthavens (renovatie baan Oostende-Brugge)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Thumbnail: https://img.youtube.com/vi/9Ftu0V8eOyk/hqdefault.jpg
+
+Opmerking: Alle bovenstaande YouTube-video’s zijn zonder ingesproken commentaar (of met optioneel ondertiteling) en bevatten geen storende tekstbanners, waardoor ze uitstekend fullscreen tot hun recht komen. U kunt eventueel de thumbnail-URL gebruiken als posterframe in de video-tag of voor previewdoeleinden.
