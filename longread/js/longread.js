@@ -16,8 +16,13 @@ class LongreadMaps {
     async loadGecodedData() {
         try {
             const chunks = [];
+            // Support both local dev and GitHub Pages paths
+            const basePath = window.location.hostname === 'localhost' 
+                ? '../dashboard/' 
+                : '/gip-dashboard/dashboard/';
+            
             for (let i = 1; i <= 6; i++) {
-                const response = await fetch(`../dashboard/projects_chunk_0${i}.json`);
+                const response = await fetch(`${basePath}projects_chunk_0${i}.json`);
                 if (!response.ok) {
                     console.warn(`Failed to load chunk ${i}`);
                     continue;

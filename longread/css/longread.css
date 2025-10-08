@@ -48,6 +48,34 @@ body {
     padding: 2rem;
     max-width: 900px;
     animation: fadeInUp 1s ease-out;
+    position: relative;
+}
+
+.hero-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+
+.hero-nav-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-nav-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(-4px);
 }
 
 .hero-title {
