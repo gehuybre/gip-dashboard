@@ -273,6 +273,30 @@ document.addEventListener('DOMContentLoaded', () => {
         section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
         fadeObserver.observe(section);
     });
+    
+    // Scroll-driven fade-out for complete overview overlay
+    const completeOverviewSection = document.getElementById('complete-overview-section');
+    const completeOverviewOverlay = document.getElementById('complete-overview-overlay');
+    
+    if (completeOverviewSection && completeOverviewOverlay) {
+        window.addEventListener('scroll', () => {
+            const sectionTop = completeOverviewSection.getBoundingClientRect().top;
+            const sectionHeight = completeOverviewSection.offsetHeight;
+            const windowHeight = window.innerHeight;
+            
+            // Start fading when section is in view, complete fade when scrolled halfway
+            if (sectionTop < windowHeight && sectionTop > -sectionHeight) {
+                const scrollProgress = 1 - ((sectionTop + sectionHeight * 0.5) / (windowHeight + sectionHeight * 0.5));
+                const fadeProgress = Math.max(0, Math.min(1, scrollProgress * 2));
+                
+                if (fadeProgress > 0.3) {
+                    completeOverviewOverlay.classList.add('fade-out');
+                } else {
+                    completeOverviewOverlay.classList.remove('fade-out');
+                }
+            }
+        });
+    }
 });
 
 // Store instance globally for debugging

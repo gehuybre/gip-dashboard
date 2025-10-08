@@ -303,6 +303,16 @@ blockquote {
     pointer-events: none;
 }
 
+/* Scroll-driven fade-out for complete overview overlay */
+.map-overlay-fade {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.map-overlay-fade.fade-out {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+}
+
 .map-overlay h2 {
     font-size: 2.5rem;
     color: var(--secondary-color);
@@ -450,6 +460,33 @@ blockquote {
     to {
         opacity: 1;
     }
+}
+
+/* Dashboard Embed Section */
+.dashboard-embed-section {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-light);
+    position: relative;
+}
+
+.dashboard-iframe {
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    border: none;
+    display: block;
+}
+
+/* Warning/Disclaimer Box */
+.highlight-box.warning {
+    background: #fff3e0;
+    border-left-color: #ff9800;
+}
+
+.highlight-box.warning p {
+    margin: 0;
+    color: #e65100;
 }
 
 /* Responsive Design */

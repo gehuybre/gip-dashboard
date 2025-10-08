@@ -75,7 +75,7 @@
     <!-- Map Section: Grote Infrastructuur -->
     <section class="map-section" data-filter="programma" data-filter-value="Grote infrastructuurprojecten">
         <div class="map-overlay">
-            <h2>Grote Infrastructuurprojecten</h2>
+            <h2>Grote infrastructuurprojecten</h2>
             <p>Van de Oosterweelverbinding tot nieuwe bruggen en tunnels: ontdek waar Vlaanderen investeert in grote infrastructuur</p>
         </div>
         <div id="map-infra" class="map-container"></div>
@@ -108,7 +108,7 @@
             </iframe>
         </div>
         <div class="video-caption">
-            <h3>Werken aan de Ring</h3>
+            <h3>Werken aan de ring</h3>
             <p>Transformatie R0 rond Brussel - veiliger en vlotter verkeer</p>
             <p class="budget-highlight">€643 miljoen • 52 projecten</p>
         </div>
@@ -127,7 +127,7 @@
     <!-- Content: Waterbeheer Introduction -->
     <section class="content-section">
         <div class="content-container">
-            <h2>Klimaatadaptatie: Beschermen tegen water</h2>
+            <h2>Klimaatadaptatie: beschermen tegen water</h2>
             <p class="lead">
                 Het Sigmaplan is Europa's grootste overstromingsbeschermingsplan. Met gecontroleerde 
                 overstromingsgebieden, dijkverhogingen en natuurontwikkeling beschermt Vlaanderen 
@@ -152,7 +152,7 @@
             </iframe>
         </div>
         <div class="video-caption">
-            <h3>Sigmaplan: Beschermen én versterken</h3>
+            <h3>Sigmaplan: beschermen én versterken</h3>
             <p>Gecontroleerde overstromingsgebieden combineren veiligheid met natuurherstel</p>
             <p class="budget-highlight">€14 miljoen dijken en waterbeheer</p>
         </div>
@@ -161,7 +161,7 @@
     <!-- Map Section: Waterbeheersing -->
     <section class="map-section" data-filter="programma" data-filter-value="Waterbeheersing">
         <div class="map-overlay">
-            <h2>Waterbeheersing en Waterwegen</h2>
+            <h2>Waterbeheersing en waterwegen</h2>
             <p>Het Sigmaplan en investeringen in waterwegen beschermen Vlaanderen tegen overstromingen</p>
         </div>
         <div id="map-water" class="map-container"></div>
@@ -214,10 +214,17 @@
         <div class="content-container">
             <h2>Ontdek de projecten bij jou in de buurt</h2>
             <p class="lead">
-                De interactieve kaart toont alle 777 projecten geografisch verspreid over Vlaanderen. 
+                De interactieve kaart toont geografisch waar de investeringen plaatsvinden. 
                 Elk project is gekleurd volgens startjaar en de grootte van de marker geeft het 
                 investeringsbedrag weer.
             </p>
+            <div class="highlight-box" style="background: #fff3e0; border-left-color: #ff9800;">
+                <p style="margin: 0; color: #e65100;">
+                    <strong>Let op:</strong> Van de 778 investeringsprojecten kunnen er 570 op de kaart weergegeven worden. 
+                    Voor de overige projecten ontbreekt voldoende locatie-informatie. De geografische posities zijn deels 
+                    automatisch bepaald op basis van locatienamen en gemeenten, waardoor er onnauwkeurigheden kunnen voorkomen.
+                </p>
+            </div>
             <div class="highlight-box">
                 <h3>Hoe de kaart gebruiken</h3>
                 <ul>
@@ -231,10 +238,10 @@
     </section>
 
     <!-- Map Section: All Projects Overview -->
-    <section class="map-section" data-filter="all">
-        <div class="map-overlay">
-            <h2>Het Complete Overzicht</h2>
-            <p>Alle 777 investeringsprojecten op één kaart - €7,51 miljard voor de Vlaamse infrastructuur</p>
+    <section class="map-section" data-filter="all" id="complete-overview-section">
+        <div class="map-overlay map-overlay-fade" id="complete-overview-overlay">
+            <h2>Het complete overzicht</h2>
+            <p>Alle 778 investeringsprojecten op één kaart - €7,51 miljard voor de Vlaamse infrastructuur</p>
         </div>
         <div id="map-all" class="map-container"></div>
     </section>
@@ -245,41 +252,19 @@
             <h2>Duik dieper in de cijfers</h2>
             <p class="lead">
                 Wil je meer weten over specifieke projecten, budgetverdeling of regionale investeringen? 
-                Het interactieve dashboard biedt gedetailleerde inzichten in alle 777 projecten.
+                Het interactieve dashboard biedt gedetailleerde inzichten in alle 778 projecten. Doorzoek, 
+                filter op programma of gemeente, en analyseer de budgetverdeling per jaar.
             </p>
-            
-            <div class="two-column">
-                <div>
-                    <h3>📊 Interactief Dashboard</h3>
-                    <p>
-                        Doorzoek alle projecten, filter op programma of gemeente, en analyseer 
-                        budgetverdeling per jaar. Exporteer de data voor eigen analyses.
-                    </p>
-                    <a href="/gip-dashboard/dashboard/index.html" class="cta-button" style="display: inline-block; margin-top: 1rem;">Open Dashboard</a>
-                </div>
-                <div>
-                    <h3>🗺️ Volledige Kaartweergave</h3>
-                    <p>
-                        Bekijk alle projecten op een grote kaart met geavanceerde filters en zoekfunctie. 
-                        Ideaal voor ruimtelijke analyses en regionale planning.
-                    </p>
-                    <a href="/gip-dashboard/web/index.html" class="cta-button secondary" style="display: inline-block; margin-top: 1rem;">Open Kaart</a>
-                </div>
-            </div>
-
-            <div class="highlight-box" style="margin-top: 2rem;">
-                <h3>💡 GIP 2025-2029 in cijfers</h3>
-                <ul>
-                    <li>777 investeringsprojecten over heel Vlaanderen</li>
-                    <li>€7,51 miljard totaal investeringsbudget (3 jaar)</li>
-                    <li>€729 miljoen voor waterwegen en blauwe economie</li>
-                    <li>€643 miljoen voor modernisering Ring Brussel</li>
-                    <li>€465 miljoen voor Oosterweelverbinding</li>
-                    <li>€386 miljoen voor fietsinfrastructuur</li>
-                    <li>7 beleidsdoelstellingen: van asset management tot regionale luchthavens</li>
-                </ul>
-            </div>
         </div>
+    </section>
+
+    <!-- Dashboard Embed -->
+    <section class="dashboard-embed-section">
+        <iframe src="/gip-dashboard/dashboard/index.html" 
+                class="dashboard-iframe" 
+                title="GIP Dashboard - Interactieve Analyse"
+                frameborder="0">
+        </iframe>
     </section>
 
     <!-- Footer -->
