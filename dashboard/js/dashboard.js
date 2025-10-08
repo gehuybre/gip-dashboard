@@ -127,14 +127,18 @@ class GIPDashboard {
             this.showFilteredOnMap = false;
             document.getElementById('show-all-map').classList.add('active');
             document.getElementById('show-filtered-map').classList.remove('active');
-            this.updateMapMarkers();
+            if (this.map) {
+                this.updateMapMarkers();
+            }
         });
         
         document.getElementById('show-filtered-map').addEventListener('click', () => {
             this.showFilteredOnMap = true;
             document.getElementById('show-all-map').classList.remove('active');
             document.getElementById('show-filtered-map').classList.add('active');
-            this.updateMapMarkers();
+            if (this.map) {
+                this.updateMapMarkers();
+            }
         });
         
         // Pagination
@@ -164,6 +168,12 @@ class GIPDashboard {
     }
     
     updateMapMarkers() {
+        // Check if map is initialized
+        if (!this.map) {
+            console.warn('Map not initialized yet');
+            return;
+        }
+        
         // Clear existing markers
         if (this.markers) {
             this.map.removeLayer(this.markers);
