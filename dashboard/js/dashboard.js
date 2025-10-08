@@ -1,4 +1,11 @@
 // GIP Dashboard JavaScript
+
+// Check if we should hide the map (for embedding)
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('embed') === 'true' || urlParams.get('hideMap') === 'true') {
+    document.body.classList.add('hide-map');
+}
+
 class GIPDashboard {
     constructor() {
         this.allProjects = [];

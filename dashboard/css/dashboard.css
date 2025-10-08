@@ -451,6 +451,11 @@ tbody tr:hover {
     margin-bottom: 30px;
 }
 
+/* Hide map when embedded */
+body.hide-map .map-section {
+    display: none;
+}
+
 .map-section h2 {
     color: var(--text-primary);
     font-size: 24px;
