@@ -35,27 +35,24 @@ body {
 
 /* Header */
 header {
-    background: var(--bg-secondary);
-    color: var(--text-primary);
-    padding: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem 2rem;
     margin-bottom: 30px;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    color: var(--text-primary);
-    font-size: 32px;
-    font-weight: normal;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
     margin-bottom: 10px;
-    text-transform: none;
 }
 
 .subtitle {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 0;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 1rem;
 }
 
 /* Info Box */
@@ -105,26 +102,6 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     padding: 2rem;
-}
-
-/* Header */
-header {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow-lg);
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.subtitle {
-    opacity: 0.9;
-    font-size: 1rem;
 }
 
 /* Statistics Cards */
