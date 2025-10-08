@@ -273,23 +273,6 @@ document.addEventListener('DOMContentLoaded', () => {
         section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
         fadeObserver.observe(section);
     });
-    
-    // Enable scroll wheel zoom on map focus
-    document.querySelectorAll('.map-container').forEach(container => {
-        container.addEventListener('mouseenter', () => {
-            const mapId = container.id;
-            if (window.longreadMaps && window.longreadMaps.maps[mapId]) {
-                window.longreadMaps.maps[mapId].map.scrollWheelZoom.enable();
-            }
-        });
-        
-        container.addEventListener('mouseleave', () => {
-            const mapId = container.id;
-            if (window.longreadMaps && window.longreadMaps.maps[mapId]) {
-                window.longreadMaps.maps[mapId].map.scrollWheelZoom.disable();
-            }
-        });
-    });
 });
 
 // Store instance globally for debugging
