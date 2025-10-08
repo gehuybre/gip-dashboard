@@ -310,18 +310,16 @@ table {
     font-size: 13px;
 }
 
-thead {
-    background: var(--bg-primary);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+table thead {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 th {
     padding: 12px 8px;
     text-align: left;
     font-weight: 600;
-    color: var(--text-primary);
+    color: white;
     border: 1px solid var(--border-color);
     white-space: nowrap;
     font-size: 12px;
@@ -335,7 +333,7 @@ th.sortable {
 }
 
 th.sortable:hover {
-    background: #e9ecef;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 th.sortable::after {
