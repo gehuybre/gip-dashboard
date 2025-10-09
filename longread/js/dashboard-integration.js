@@ -4,7 +4,7 @@ class ProjectDashboard {
         this.allProjects = [];
         this.filteredProjects = [];
         this.currentPage = 1;
-        this.itemsPerPage = 50;
+        this.itemsPerPage = 15;
         this.sortColumn = 'id';
         this.sortDirection = 'asc';
         
