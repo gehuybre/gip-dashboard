@@ -105,7 +105,12 @@ class ProjectDashboard {
     populateFilters() {
         const programmas = [...new Set(this.allProjects.map(p => p.programma))].filter(p => p).sort();
         const entiteiten = [...new Set(this.allProjects.map(p => p.entiteit))].filter(e => e).sort();
-        const startjaren = [...new Set(this.allProjects.map(p => p.start_jaar))].filter(j => j).sort();
+        // Filter out null/undefined/empty values and convert to numbers for proper sorting
+        const startjaren = [...new Set(this.allProjects
+            .map(p => p.start_jaar)
+            .filter(j => j != null && j !== '' && !isNaN(j))
+            .map(j => Number(j))
+        )].sort((a, b) => a - b);
         
         const programmaSelect = document.getElementById('filter-programma');
         programmas.forEach(prog => {
@@ -148,8 +153,7 @@ class ProjectDashboard {
             const matchesProgramma = !programma || project.programma === programma;
             const matchesEntiteit = !entiteit || project.entiteit === entiteit;
             
-            const matchesStartjaar = !startjaar || 
-                (startjaar === 'null' ? !project.start_jaar : project.start_jaar == startjaar);
+            const matchesStartjaar = !startjaar || project.start_jaar == startjaar;
             const matchesGemeente = !gemeente || 
                 (project.gemeenten && project.gemeenten.toLowerCase().includes(gemeente));
             
