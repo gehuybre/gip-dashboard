@@ -34,12 +34,14 @@ def calculate_budget_highlights(projects):
     else:
         highlights['budget-oosterweelverbinding'] = "Geen data beschikbaar"
     
-    # 3. Ring Brussel - zoek op projectnaam met "ring" of "brussel" en "r0"
+    # 3. Ring Brussel - zoek ALLEEN op R0 of expliciete ring-projecten rond Brussel
     ring_brussel = [
         p for p in projects
-        if (p.get('project_naam') and 
-            ('ring' in p['project_naam'].lower() or 'r0' in p['project_naam'].lower() or 'brussel' in p['project_naam'].lower()) and
-            (p.get('gemeenten') and 'brussel' in p['gemeenten'].lower() or 'ring' in p.get('project_naam', '').lower()))
+        if p.get('project_naam') and (
+            'r0' in p['project_naam'].lower() or
+            ('ring' in p['project_naam'].lower() and 'brussel' in p['project_naam'].lower()) or
+            'oosterweelverbinding' in p['project_naam'].lower()
+        )
     ]
     ring_total = sum(p.get('totaal_budget', 0) for p in ring_brussel)
     ring_count = len(ring_brussel)
