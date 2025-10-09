@@ -1029,21 +1029,30 @@ blockquote {
 
 .footer-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.footer-links a {
+.footer-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     text-decoration: none;
-    opacity: 0.8;
-    transition: opacity 0.3s;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
-.footer-links a:hover {
-    opacity: 1;
-    text-decoration: underline;
+.footer-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Animations */
