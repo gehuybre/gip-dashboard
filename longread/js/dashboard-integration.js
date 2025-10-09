@@ -338,3 +338,102 @@ class ProjectDashboard {
 document.addEventListener('DOMContentLoaded', () => {
     new ProjectDashboard();
 });
+
+// Update budget highlights with calculated data
+function updateBudgetHighlights(projects) {
+    if (!projects || projects.length === 0) return;
+    
+    const formatMillion = (amount) => {
+        const millions = amount / 1000000;
+        return millions >= 1 ? `€${millions.toFixed(0)}M` : `€${(amount / 1000).toFixed(0)}K`;
+    };
+    
+    // 1. Asset Management totaal
+    const assetManagement = projects.filter(p => p.programma === 'Asset Management');
+    const assetTotal = assetManagement.reduce((sum, p) => sum + p.totaal_budget, 0);
+    const assetCount = assetManagement.length;
+    const assetEl = document.getElementById('budget-asset-management');
+    if (assetEl) assetEl.textContent = `${formatMillion(assetTotal)} • ${assetCount} projecten`;
+    
+    // 2. Oosterweelverbinding - zoek op projectnaam
+    const oosterweel = projects.filter(p => 
+        p.project_naam && p.project_naam.toLowerCase().includes('oosterweel')
+    );
+    const oosterweelTotal = oosterweel.reduce((sum, p) => sum + p.totaal_budget, 0);
+    const oosterweelCount = oosterweel.length;
+    const oosterweelEl = document.getElementById('budget-oosterweelverbinding');
+    if (oosterweelEl) {
+        oosterweelEl.textContent = oosterweelCount > 0 
+            ? `${formatMillion(oosterweelTotal)} investering • ${oosterweelCount} project${oosterweelCount > 1 ? 'en' : ''}`
+            : 'Geen data beschikbaar';
+    }
+    
+    // 3. Ring Brussel - zoek op projectnaam met "ring" of "brussel" en "r0"
+    const ringBrussel = projects.filter(p => {
+        const name = (p.project_naam || '').toLowerCase();
+        const location = (p.gemeenten || '').toLowerCase();
+        return (name.includes('ring') || name.includes('r0') || name.includes('brussel')) &&
+               (location.includes('brussel') || name.includes('ring'));
+    });
+    const ringTotal = ringBrussel.reduce((sum, p) => sum + p.totaal_budget, 0);
+    const ringCount = ringBrussel.length;
+    const ringEl = document.getElementById('budget-ring-brussel');
+    if (ringEl) {
+        ringEl.textContent = ringCount > 0 
+            ? `${formatMillion(ringTotal)} • ${ringCount} projecten`
+            : 'Geen data beschikbaar';
+    }
+    
+    // 4. Fietsinfrastructuur - zoek op infrastructuur_type
+    const fiets = projects.filter(p => {
+        const infra = (p.infrastructuur_type || '').toLowerCase();
+        const name = (p.project_naam || '').toLowerCase();
+        return infra.includes('fiets') || name.includes('fiets');
+    });
+    const fietsTotal = fiets.reduce((sum, p) => sum + p.totaal_budget, 0);
+    const fietsCount = fiets.length;
+    const fietsEl = document.getElementById('budget-fietsinfrastructuur');
+    if (fietsEl) {
+        fietsEl.textContent = fietsCount > 0 
+            ? `${formatMillion(fietsTotal)} fietsinfrastructuur • ${fietsCount} projecten`
+            : 'Geen data beschikbaar';
+    }
+    
+    // 5. Sigmaplan - zoek op projectnaam
+    const sigmaplan = projects.filter(p => {
+        const name = (p.project_naam || '').toLowerCase();
+        return name.includes('sigma');
+    });
+    const sigmaTotal = sigmaplan.reduce((sum, p) => sum + p.totaal_budget, 0);
+    const sigmaCount = sigmaplan.length;
+    const sigmaEl = document.getElementById('budget-sigmaplan');
+    if (sigmaEl) {
+        sigmaEl.textContent = sigmaCount > 0 
+            ? `${formatMillion(sigmaTotal)} dijken en waterbeheer • ${sigmaCount} project${sigmaCount > 1 ? 'en' : ''}`
+            : 'Geen data beschikbaar';
+    }
+    
+    // 6. Albertkanaal - zoek op projectnaam
+    const albertkanaal = projects.filter(p => {
+        const name = (p.project_naam || '').toLowerCase();
+        return name.includes('albertkanaal') || (name.includes('albert') && name.includes('kanaal'));
+    });
+    const albertTotal = albertkanaal.reduce((sum, p) => sum + p.totaal_budget, 0);
+    const albertCount = albertkanaal.length;
+    const albertEl = document.getElementById('budget-albertkanaal');
+    if (albertEl) {
+        albertEl.textContent = albertCount > 0 
+            ? `${formatMillion(albertTotal)} investering • ${albertCount} project${albertCount > 1 ? 'en' : ''}`
+            : 'Geen data beschikbaar';
+    }
+}
+
+// Load projects data and update highlights
+fetch('../dashboard/all_projects.json')
+    .then(response => response.json())
+    .then(data => {
+        updateBudgetHighlights(data.projects || data);
+    })
+    .catch(error => {
+        console.error('Error loading budget data:', error);
+    });
