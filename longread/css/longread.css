@@ -194,19 +194,48 @@ body {
 #projects-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 1200px;
+    table-layout: auto;
+}
+
+/* Column widths - responsive and smart */
+#projects-table .col-project {
+    width: 30%;
+    min-width: 200px;
+}
+
+#projects-table .col-entiteit {
+    width: 15%;
+    min-width: 120px;
+}
+
+#projects-table .col-gemeenten {
+    width: 15%;
+    min-width: 120px;
+}
+
+#projects-table .col-budget {
+    width: 8%;
+    min-width: 80px;
+}
+
+#projects-table .col-jaar {
+    width: 6%;
+    min-width: 60px;
 }
 
 #projects-table thead {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 #projects-table th {
-    padding: 0.875rem 0.75rem;
+    padding: 0.75rem 0.5rem;
     text-align: left;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 1.5vw, 0.85rem);
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
@@ -232,9 +261,8 @@ body {
 }
 
 #projects-table td {
-    padding: 0.875rem 0.75rem;
-    font-size: 0.85rem;
-    max-width: 300px;
+    padding: 0.75rem 0.5rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -242,8 +270,9 @@ body {
 #projects-table td.numeric {
     text-align: right;
     font-variant-numeric: tabular-nums;
-    font-family: 'Monaco', 'Courier New', monospace;
+    font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 /* Pagination */

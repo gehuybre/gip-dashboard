@@ -539,13 +539,6 @@
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label for="filter-infrastructuur">Infrastructuur (meerdere selecteerbaar)</label>
-                        <select id="filter-infrastructuur" multiple size="5">
-                            <option value="">Alle types</option>
-                        </select>
-                        <small style="color: #666; font-size: 0.85rem;">Houd Ctrl/Cmd ingedrukt voor meerdere selecties</small>
-                    </div>
-                    <div class="filter-group">
                         <label for="filter-startjaar">Startjaar</label>
                         <select id="filter-startjaar">
                             <option value="">Alle jaren</option>
@@ -577,16 +570,14 @@
                 <table id="projects-table">
                     <thead>
                         <tr>
-                            <th class="sortable" data-column="id">ID</th>
-                            <th class="sortable" data-column="project_naam">Investeringsproject</th>
-                            <th class="sortable" data-column="entiteit">Entiteit</th>
-                            <th class="sortable" data-column="gemeenten">Gemeenten</th>
-                            <th class="sortable" data-column="infrastructuur_type">Infrastructuur</th>
-                            <th class="sortable numeric" data-column="budget_2025">Budget 2025</th>
-                            <th class="sortable numeric" data-column="budget_2026">Budget 2026</th>
-                            <th class="sortable numeric" data-column="budget_2027">Budget 2027</th>
-                            <th class="sortable numeric" data-column="totaal_budget">Totaal Budget</th>
-                            <th class="sortable" data-column="start_jaar">Startjaar</th>
+                            <th class="sortable col-project" data-column="project_naam">Project</th>
+                            <th class="sortable col-entiteit" data-column="entiteit">Entiteit</th>
+                            <th class="sortable col-gemeenten" data-column="gemeenten">Gemeenten</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2025">2025</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2026">2026</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2027">2027</th>
+                            <th class="sortable numeric col-budget" data-column="totaal_budget">Totaal</th>
+                            <th class="sortable col-jaar" data-column="start_jaar">Start</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">

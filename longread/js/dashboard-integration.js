@@ -69,7 +69,6 @@ class ProjectDashboard {
         // Filters
         document.getElementById('filter-programma').addEventListener('change', () => this.applyFilters());
         document.getElementById('filter-entiteit').addEventListener('change', () => this.applyFilters());
-        document.getElementById('filter-infrastructuur').addEventListener('change', () => this.applyFilters());
         document.getElementById('filter-startjaar').addEventListener('change', () => this.applyFilters());
         document.getElementById('filter-gemeente').addEventListener('input', () => this.applyFilters());
         
@@ -104,8 +103,10 @@ class ProjectDashboard {
     }
     
     populateFilters() {
-        // Programma's
-        const programmas = [...new Set(this.allProjects.map(p => p.programma).filter(p => p))].sort();
+        const programmas = [...new Set(this.allProjects.map(p => p.programma))].filter(p => p).sort();
+        const entiteiten = [...new Set(this.allProjects.map(p => p.entiteit))].filter(e => e).sort();
+        const startjaren = [...new Set(this.allProjects.map(p => p.start_jaar))].filter(j => j).sort();
+        
         const programmaSelect = document.getElementById('filter-programma');
         programmas.forEach(prog => {
             const option = document.createElement('option');
@@ -114,8 +115,6 @@ class ProjectDashboard {
             programmaSelect.appendChild(option);
         });
         
-        // Entiteiten
-        const entiteiten = [...new Set(this.allProjects.map(p => p.entiteit).filter(e => e))].sort();
         const entiteitSelect = document.getElementById('filter-entiteit');
         entiteiten.forEach(ent => {
             const option = document.createElement('option');
@@ -124,21 +123,12 @@ class ProjectDashboard {
             entiteitSelect.appendChild(option);
         });
         
-        // Infrastructuur types - split combined types (e.g., "bruggen; tunnels" -> ["bruggen", "tunnels"])
-        const infraSet = new Set();
-        this.allProjects.forEach(p => {
-            if (p.infrastructuur_type) {
-                const types = p.infrastructuur_type.split(';').map(t => t.trim());
-                types.forEach(type => infraSet.add(type));
-            }
-        });
-        const infra = [...infraSet].filter(i => i).sort();
-        const infraSelect = document.getElementById('filter-infrastructuur');
-        infra.forEach(inf => {
+        const startjaarSelect = document.getElementById('filter-startjaar');
+        startjaren.forEach(jaar => {
             const option = document.createElement('option');
-            option.value = inf;
-            option.textContent = inf;
-            infraSelect.appendChild(option);
+            option.value = jaar;
+            option.textContent = jaar;
+            startjaarSelect.appendChild(option);
         });
     }
     
@@ -146,10 +136,6 @@ class ProjectDashboard {
         const searchTerm = document.getElementById('search').value.toLowerCase();
         const programma = document.getElementById('filter-programma').value;
         const entiteit = document.getElementById('filter-entiteit').value;
-        const infrastructuurSelect = document.getElementById('filter-infrastructuur');
-        const selectedInfrastructuur = Array.from(infrastructuurSelect.selectedOptions)
-            .map(option => option.value)
-            .filter(val => val !== ''); // Filter out "Alle types" empty value
         const startjaar = document.getElementById('filter-startjaar').value;
         const gemeente = document.getElementById('filter-gemeente').value.toLowerCase();
         
@@ -162,24 +148,13 @@ class ProjectDashboard {
             const matchesProgramma = !programma || project.programma === programma;
             const matchesEntiteit = !entiteit || project.entiteit === entiteit;
             
-            // Multi-select infrastructure filter: check if project has ANY of the selected types
-            const matchesInfra = selectedInfrastructuur.length === 0 || 
-                selectedInfrastructuur.some(selectedType => {
-                    if (project.infrastructuur_type) {
-                        // Handle multiple infrastructure types separated by semicolons
-                        const projectTypes = project.infrastructuur_type.split(';').map(t => t.trim());
-                        return projectTypes.includes(selectedType);
-                    }
-                    return false;
-                });
-            
             const matchesStartjaar = !startjaar || 
                 (startjaar === 'null' ? !project.start_jaar : project.start_jaar == startjaar);
             const matchesGemeente = !gemeente || 
                 (project.gemeenten && project.gemeenten.toLowerCase().includes(gemeente));
             
             return matchesSearch && matchesProgramma && matchesEntiteit && 
-                   matchesInfra && matchesStartjaar && matchesGemeente;
+                   matchesStartjaar && matchesGemeente;
         });
         
         this.currentPage = 1;
@@ -191,7 +166,6 @@ class ProjectDashboard {
         document.getElementById('search').value = '';
         document.getElementById('filter-programma').value = '';
         document.getElementById('filter-entiteit').value = '';
-        document.getElementById('filter-infrastructuur').selectedIndex = -1; // Clear all selections in multi-select
         document.getElementById('filter-startjaar').value = '';
         document.getElementById('filter-gemeente').value = '';
         this.applyFilters();
@@ -226,16 +200,14 @@ class ProjectDashboard {
         const tbody = document.getElementById('table-body');
         tbody.innerHTML = pageProjects.map(project => `
             <tr>
-                <td>${project.id}</td>
-                <td>${project.project_naam}</td>
-                <td>${project.entiteit}</td>
-                <td>${project.gemeenten || '-'}</td>
-                <td>${project.infrastructuur_type}</td>
-                <td class="numeric">${this.formatCurrency(project.budget_2025)}</td>
-                <td class="numeric">${this.formatCurrency(project.budget_2026)}</td>
-                <td class="numeric">${this.formatCurrency(project.budget_2027)}</td>
-                <td class="numeric"><strong>${this.formatCurrency(project.totaal_budget)}</strong></td>
-                <td>${project.start_jaar || '-'}</td>
+                <td class="col-project">${project.project_naam}</td>
+                <td class="col-entiteit">${project.entiteit}</td>
+                <td class="col-gemeenten">${project.gemeenten || '-'}</td>
+                <td class="col-budget numeric">${this.formatCurrencyShort(project.budget_2025)}</td>
+                <td class="col-budget numeric">${this.formatCurrencyShort(project.budget_2026)}</td>
+                <td class="col-budget numeric">${this.formatCurrencyShort(project.budget_2027)}</td>
+                <td class="col-budget numeric"><strong>${this.formatCurrencyShort(project.totaal_budget)}</strong></td>
+                <td class="col-jaar">${project.start_jaar || '-'}</td>
             </tr>
         `).join('');
         
