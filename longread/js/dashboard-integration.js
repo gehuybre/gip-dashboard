@@ -15,22 +15,50 @@ class ProjectDashboard {
         await this.loadData();
         this.setupEventListeners();
         this.populateFilters();
+        this.calculateTopCategories();
         this.applyFilters();
     }
     
     async loadData() {
         try {
             // Determine path based on environment
-            const basePath = window.location.hostname === 'localhost' 
-                ? '../dashboard/' 
-                : '/gip-dashboard/dashboard/';
+            // For local: ../dashboard/
+            // For GitHub Pages: /gip-dashboard/dashboard/
+            const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+            const isGitHubPages = window.location.hostname.includes('github.io');
             
+            let basePath;
+            if (isLocalhost) {
+                basePath = '../dashboard/';
+            } else if (isGitHubPages) {
+                basePath = '/gip-dashboard/dashboard/';
+            } else {
+                // Fallback: try relative path first
+                basePath = '../dashboard/';
+            }
+            
+            console.log('Loading data from:', basePath + 'all_projects.json');
             const response = await fetch(basePath + 'all_projects.json');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             const data = await response.json();
             this.allProjects = data.projects;
             this.filteredProjects = [...this.allProjects];
+            console.log(`✅ Loaded ${this.allProjects.length} projects`);
         } catch (error) {
             console.error('Error loading project data:', error);
+            // Show error message to user
+            const container = document.querySelector('.dashboard-section .content-container');
+            if (container) {
+                const errorMsg = document.createElement('div');
+                errorMsg.className = 'error-message';
+                errorMsg.style.cssText = 'background: #fee; border-left: 4px solid #f00; padding: 1rem; margin: 1rem 0; border-radius: 4px;';
+                errorMsg.innerHTML = `<strong>Fout bij laden van data:</strong> ${error.message}<br>Probeer de pagina te verversen.`;
+                container.insertBefore(errorMsg, container.firstChild);
+            }
         }
     }
     
@@ -96,8 +124,15 @@ class ProjectDashboard {
             entiteitSelect.appendChild(option);
         });
         
-        // Infrastructuur types
-        const infra = [...new Set(this.allProjects.map(p => p.infrastructuur_type).filter(i => i))].sort();
+        // Infrastructuur types - split combined types (e.g., "bruggen; tunnels" -> ["bruggen", "tunnels"])
+        const infraSet = new Set();
+        this.allProjects.forEach(p => {
+            if (p.infrastructuur_type) {
+                const types = p.infrastructuur_type.split(';').map(t => t.trim());
+                types.forEach(type => infraSet.add(type));
+            }
+        });
+        const infra = [...infraSet].filter(i => i).sort();
         const infraSelect = document.getElementById('filter-infrastructuur');
         infra.forEach(inf => {
             const option = document.createElement('option');
@@ -111,22 +146,37 @@ class ProjectDashboard {
         const searchTerm = document.getElementById('search').value.toLowerCase();
         const programma = document.getElementById('filter-programma').value;
         const entiteit = document.getElementById('filter-entiteit').value;
-        const infrastructuur = document.getElementById('filter-infrastructuur').value;
+        const infrastructuurSelect = document.getElementById('filter-infrastructuur');
+        const selectedInfrastructuur = Array.from(infrastructuurSelect.selectedOptions)
+            .map(option => option.value)
+            .filter(val => val !== ''); // Filter out "Alle types" empty value
         const startjaar = document.getElementById('filter-startjaar').value;
         const gemeente = document.getElementById('filter-gemeente').value.toLowerCase();
         
         this.filteredProjects = this.allProjects.filter(project => {
             const matchesSearch = !searchTerm || 
-                project.project_naam.toLowerCase().includes(searchTerm) ||
-                project.locatie.toLowerCase().includes(searchTerm) ||
-                project.gemeenten.toLowerCase().includes(searchTerm);
+                (project.project_naam && project.project_naam.toLowerCase().includes(searchTerm)) ||
+                (project.locatie && project.locatie.toLowerCase().includes(searchTerm)) ||
+                (project.gemeenten && project.gemeenten.toLowerCase().includes(searchTerm));
             
             const matchesProgramma = !programma || project.programma === programma;
             const matchesEntiteit = !entiteit || project.entiteit === entiteit;
-            const matchesInfra = !infrastructuur || project.infrastructuur_type === infrastructuur;
+            
+            // Multi-select infrastructure filter: check if project has ANY of the selected types
+            const matchesInfra = selectedInfrastructuur.length === 0 || 
+                selectedInfrastructuur.some(selectedType => {
+                    if (project.infrastructuur_type) {
+                        // Handle multiple infrastructure types separated by semicolons
+                        const projectTypes = project.infrastructuur_type.split(';').map(t => t.trim());
+                        return projectTypes.includes(selectedType);
+                    }
+                    return false;
+                });
+            
             const matchesStartjaar = !startjaar || 
                 (startjaar === 'null' ? !project.start_jaar : project.start_jaar == startjaar);
-            const matchesGemeente = !gemeente || project.gemeenten.toLowerCase().includes(gemeente);
+            const matchesGemeente = !gemeente || 
+                (project.gemeenten && project.gemeenten.toLowerCase().includes(gemeente));
             
             return matchesSearch && matchesProgramma && matchesEntiteit && 
                    matchesInfra && matchesStartjaar && matchesGemeente;
@@ -141,7 +191,7 @@ class ProjectDashboard {
         document.getElementById('search').value = '';
         document.getElementById('filter-programma').value = '';
         document.getElementById('filter-entiteit').value = '';
-        document.getElementById('filter-infrastructuur').value = '';
+        document.getElementById('filter-infrastructuur').selectedIndex = -1; // Clear all selections in multi-select
         document.getElementById('filter-startjaar').value = '';
         document.getElementById('filter-gemeente').value = '';
         this.applyFilters();
@@ -217,6 +267,69 @@ class ProjectDashboard {
     formatCurrency(amount) {
         if (!amount || amount === 0) return '-';
         return '€ ' + amount.toLocaleString('nl-BE', { maximumFractionDigits: 0 });
+    }
+    
+    formatCurrencyShort(amount) {
+        if (!amount || amount === 0) return '€0';
+        if (amount >= 1000000) {
+            return '€' + (amount / 1000000).toFixed(0) + 'M';
+        } else if (amount >= 1000) {
+            return '€' + (amount / 1000).toFixed(0) + 'K';
+        }
+        return '€' + amount.toFixed(0);
+    }
+    
+    calculateTopCategories() {
+        // Group projects by programma and calculate total budgets
+        const programmaStats = {};
+        
+        this.allProjects.forEach(project => {
+            const programma = project.programma || 'Onbekend';
+            if (!programmaStats[programma]) {
+                programmaStats[programma] = {
+                    name: programma,
+                    budget_2025: 0,
+                    budget_2026: 0,
+                    budget_2027: 0,
+                    total: 0,
+                    count: 0
+                };
+            }
+            
+            programmaStats[programma].budget_2025 += project.budget_2025 || 0;
+            programmaStats[programma].budget_2026 += project.budget_2026 || 0;
+            programmaStats[programma].budget_2027 += project.budget_2027 || 0;
+            programmaStats[programma].total += project.totaal_budget || 0;
+            programmaStats[programma].count++;
+        });
+        
+        // Convert to array and sort by total budget
+        const sortedProgrammas = Object.values(programmaStats)
+            .sort((a, b) => b.total - a.total)
+            .slice(0, 6); // Get top 6
+        
+        // Render the top categories
+        this.renderTopCategories(sortedProgrammas);
+    }
+    
+    renderTopCategories(categories) {
+        const container = document.getElementById('top-categories-grid');
+        if (!container) return;
+        
+        container.innerHTML = categories.map(cat => `
+            <div class="category-card">
+                <div class="category-header">
+                    <h5>${cat.name}</h5>
+                    <div class="category-total">${this.formatCurrencyShort(cat.total)}</div>
+                </div>
+                <div class="category-breakdown">
+                    <span class="year-budget">2025: ${this.formatCurrencyShort(cat.budget_2025)}</span>
+                    <span class="year-budget">2026: ${this.formatCurrencyShort(cat.budget_2026)}</span>
+                    <span class="year-budget">2027: ${this.formatCurrencyShort(cat.budget_2027)}</span>
+                </div>
+                <div class="category-count">${cat.count} projecten</div>
+            </div>
+        `).join('');
     }
     
     exportToCSV() {

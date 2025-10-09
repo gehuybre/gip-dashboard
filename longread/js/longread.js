@@ -17,14 +17,27 @@ class LongreadMaps {
         try {
             const chunks = [];
             // Support both local dev and GitHub Pages paths
-            const basePath = window.location.hostname === 'localhost' 
-                ? '../dashboard/' 
-                : '/gip-dashboard/dashboard/';
+            const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+            const isGitHubPages = window.location.hostname.includes('github.io');
+            
+            let basePath;
+            if (isLocalhost) {
+                basePath = '../dashboard/';
+            } else if (isGitHubPages) {
+                basePath = '/gip-dashboard/dashboard/';
+            } else {
+                // Fallback: try relative path first
+                basePath = '../dashboard/';
+            }
+            
+            console.log('Loading geocoded data from:', basePath);
             
             for (let i = 1; i <= 6; i++) {
-                const response = await fetch(`${basePath}projects_chunk_0${i}.json`);
+                const chunkPath = `${basePath}projects_chunk_0${i}.json`;
+                console.log(`Loading chunk ${i}:`, chunkPath);
+                const response = await fetch(chunkPath);
                 if (!response.ok) {
-                    console.warn(`Failed to load chunk ${i}`);
+                    console.warn(`Failed to load chunk ${i}: HTTP ${response.status}`);
                     continue;
                 }
                 const data = await response.json();
