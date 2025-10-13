@@ -517,7 +517,7 @@ blockquote {
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 @media (min-aspect-ratio: 16/9) {

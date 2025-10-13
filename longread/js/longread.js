@@ -312,8 +312,93 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Video Autoplay Handler
+class VideoAutoplay {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        // Wait for DOM to be ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.setupVideoObserver());
+        } else {
+            this.setupVideoObserver();
+        }
+    }
+
+    setupVideoObserver() {
+        const videos = document.querySelectorAll('.video-section iframe');
+        
+        if (!videos.length) return;
+
+        // Try to trigger autoplay with user interaction
+        this.enableAutoplayWithInteraction();
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const iframe = entry.target;
+                if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+                    this.playVideo(iframe);
+                } else {
+                    this.pauseVideo(iframe);
+                }
+            });
+        }, {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+    }
+
+    enableAutoplayWithInteraction() {
+        // Add click/scroll handlers to enable autoplay
+        const enableAutoplay = () => {
+            const videos = document.querySelectorAll('.video-section iframe');
+            videos.forEach(iframe => {
+                // Re-set the src to trigger autoplay after user interaction
+                const currentSrc = iframe.src;
+                if (currentSrc && !currentSrc.includes('autoplay=1')) {
+                    iframe.src = currentSrc.replace('autoplay=0', 'autoplay=1');
+                }
+            });
+            
+            // Remove listeners after first interaction
+            document.removeEventListener('click', enableAutoplay);
+            document.removeEventListener('scroll', enableAutoplay);
+        };
+
+        document.addEventListener('click', enableAutoplay, { once: true });
+        document.addEventListener('scroll', enableAutoplay, { once: true });
+    }
+
+    playVideo(iframe) {
+        try {
+            // For YouTube embeds, we can try to use postMessage API
+            iframe.contentWindow?.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        } catch (e) {
+            console.log('Could not control video playback:', e.message);
+        }
+    }
+
+    pauseVideo(iframe) {
+        try {
+            // For YouTube embeds, we can try to use postMessage API
+            iframe.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        } catch (e) {
+            console.log('Could not control video playback:', e.message);
+        }
+    }
+}
+
 // Store instance globally for debugging
 window.longreadMaps = null;
+window.videoAutoplay = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     window.longreadMaps = new LongreadMaps();
+    window.videoAutoplay = new VideoAutoplay();
 });
