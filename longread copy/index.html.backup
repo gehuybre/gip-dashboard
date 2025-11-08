@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbinden en Vernieuwen | GIP 2025-2029</title>
+    <meta name="description" content="Een visueel verhaal over het Geïntegreerd Investeringsprogramma van Mobiliteit en Openbare Werken Vlaanderen">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/longread.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-nav">
+                <a href="/gip-dashboard/dashboard/index.html" class="hero-nav-link">← Dashboard</a>
+            </div>
+            <h1 class="hero-title">Verbinden en Vernieuwen</h1>
+            <p class="hero-subtitle">Het Geïntegreerd Investeringsprogramma 2025-2029</p>
+            <p class="hero-description">
+                Een investeringsplan van €7,4 miljard voor de Vlaamse infrastructuur
+            </p>
+            <a href="#overview" class="scroll-indicator">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20 10 L20 30 M12 22 L20 30 L28 22" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Overview Section: Top 6 Categorieën -->
+    <section id="overview" class="content-section">
+        <div class="content-container">
+            <h2>GIP 2025-2029 in cijfers</h2>
+            <div class="stats-highlight">
+                <div class="stat-item">
+                    <div class="stat-number" id="total-projects-count">774</div>
+                    <div class="stat-label">Investeringsprojecten</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-budget-amount">€7,4 mld</div>
+                    <div class="stat-label">Totaal budget 2025-2027</div>
+                </div>
+            </div>
+            
+            <div class="stats-overview">
+                <h3 class="top-categories-title">Top 6 investeringsprogramma's</h3>
+                <div class="categories-grid-3col">
+                    <div class="category-card-full">
+                        <h4>Asset Management</h4>
+                        <div class="category-budget">€2085M</div>
+                        <div class="category-years">
+                            <div>2025: €674M</div>
+                            <div>2026: €711M</div>
+                            <div>2027: €700M</div>
+                        </div>
+                        <div class="category-count">311 projecten</div>
+                    </div>
+                    
+                    <div class="category-card-full">
+                        <h4>Grote werken in het wegennet</h4>
+                        <div class="category-budget">€1732M</div>
+                        <div class="category-years">
+                            <div>2025: €440M</div>
+                            <div>2026: €621M</div>
+                            <div>2027: €670M</div>
+                        </div>
+                        <div class="category-count">107 projecten</div>
+                    </div>
+                    
+                    <div class="category-card-full">
+                        <h4>Duurzaam personenvervoer en modal shift</h4>
+                        <div class="category-budget">€1525M</div>
+                        <div class="category-years">
+                            <div>2025: €692M</div>
+                            <div>2026: €397M</div>
+                            <div>2027: €436M</div>
+                        </div>
+                        <div class="category-count">148 projecten</div>
+                    </div>
+                    
+                    <div class="category-card-full">
+                        <h4>Diversen en recurrente kosten</h4>
+                        <div class="category-budget">€597M</div>
+                        <div class="category-years">
+                            <div>2025: €246M</div>
+                            <div>2026: €196M</div>
+                            <div>2027: €154M</div>
+                        </div>
+                        <div class="category-count">35 projecten</div>
+                    </div>
+                    
+                    <div class="category-card-full">
+                        <h4>Waterbeheersing</h4>
+                        <div class="category-budget">€329M</div>
+                        <div class="category-years">
+                            <div>2025: €104M</div>
+                            <div>2026: €113M</div>
+                            <div>2027: €111M</div>
+                        </div>
+                        <div class="category-count">61 projecten</div>
+                    </div>
+                    
+                    <div class="category-card-full">
+                        <h4>Grote investeringen in de zeehavens</h4>
+                        <div class="category-budget">€272M</div>
+                        <div class="category-years">
+                            <div>2025: €78M</div>
+                            <div>2026: €71M</div>
+                            <div>2027: €124M</div>
+                        </div>
+                        <div class="category-count">9 projecten</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CATEGORIE 1: ASSET MANAGEMENT
+         ======================================== -->
+    
+    <!-- Asset Management: Intro -->
+    <section class="hero-image-section hero-asset-management">
+        <div class="hero-image-content">
+            <h2>Asset Management</h2>
+            <p class="lead">
+                Onderhoud en vernieuwing van bestaande infrastructuur
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Veiligheid door onderhoud</h2>
+            <p class="lead">
+                Een groot deel van het GIP gaat naar asset management: het beheer en onderhoud van 
+                de bestaande infrastructuur. Dit omvat wegen, bruggen, tunnels, sluizen en waterwegen 
+                die dagelijks door miljoenen Vlamingen worden gebruikt.
+            </p>
+            <blockquote>
+                "Investeren in onderhoud is investeren in veiligheid. Een brug die vandaag wordt 
+                hersteld, is morgen een veilige verbinding voor duizenden reizigers."
+            </blockquote>
+            <div class="compact-cards">
+                <div class="compact-card">
+                    <h4>€2,1 miljard investering</h4>
+                    <p>311 projecten voor onderhoud van wegen, bruggen, tunnels en waterwegen</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Preventief werken</h4>
+                    <p>Structureel onderhoud voorkomt incidenten en bespaart op lange termijn kosten</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Continuïteit gegarandeerd</h4>
+                    <p>Betrouwbare infrastructuur voor mobiliteit en economische activiteit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video: Asset Management -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline preload="metadata" 
+                   title="Asset Management - Onderhoud infrastructuur"
+                   class="video-player">
+                <source src="assets/Asfaltmachine Voor Snelwegconstructie.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/Asfaltmachine Voor Snelwegconstructie.mp4">Download the video</a> instead.</p>
+            </video>
+        </div>
+        <div class="video-caption">
+            <h3>Asset Management</h3>
+            <p>Vernieuwing van waterdichting, brandwerende bekleding en technische installaties</p>
+            <p class="budget-highlight" id="budget-asset-management">€2085M • 311 projecten</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CATEGORIE 2: GROTE WERKEN IN HET WEGENNET
+         ======================================== -->
+    
+    <!-- Grote Werken: Intro -->
+    <section class="hero-image-section hero-grote-werken">
+        <div class="hero-image-content">
+            <h2>Grote werken in het wegennet</h2>
+            <p class="lead">
+                Van Oosterweelverbinding tot Ring rond Brussel
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Doorstroming en bereikbaarheid</h2>
+            <p class="lead">
+                De grootste infrastructuurprojecten van Vlaanderen transformeren het wegennet. 
+                Van de Oosterweelverbinding die de Ring van Antwerpen voltooit, tot de modernisering 
+                van knooppunten rond Brussel en de ombouw van de R4 in Gent.
+            </p>
+            <div class="compact-cards">
+                <div class="compact-card">
+                    <h4>€1,7 miljard investering</h4>
+                    <p>107 projecten voor nieuwe verbindingen en capaciteitsuitbreiding</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Vlotter verkeer</h4>
+                    <p>Minder files door betere doorstroming en veiliger knooppunten</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Economische impact</h4>
+                    <p>Betrouwbare bereikbaarheid van Vlaamse havens en economische kernen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video: Oosterweelverbinding -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline preload="metadata" 
+               title="Oosterweelverbinding - Plaatsing Boogbrug"
+               class="video-player">
+            <source src="assets/oosterweelverbinding.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video. <a href="assets/oosterweelverbinding.mp4">Download the video</a> instead.</p>
+        </video>
+        </div>
+        <div class="video-caption">
+            <h3>Oosterweelverbinding</h3>
+            <p>Het grootste infrastructuurproject van Vlaanderen voltooit de Ring van Antwerpen</p>
+            <p class="budget-highlight" id="budget-oosterweelverbinding">€465M investering • 3 projecten</p>
+        </div>
+    </section>
+
+    <!-- Video: Ring Brussel -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline preload="metadata" 
+               title="Ring rond Brussel - Modernisering Knooppunten"
+               class="video-player">
+            <source src="assets/ring-brussel.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video. <a href="assets/ring-brussel.mp4">Download the video</a> instead.</p>
+        </video>
+        </div>
+        <div class="video-caption">
+            <h3>Ring rond Brussel</h3>
+            <p>Transformatie R0 - veiliger en vlotter verkeer rond de hoofdstad</p>
+            <p class="budget-highlight" id="budget-ring-brussel">€389M • 24 projecten</p>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+         CATEGORIE 3: DUURZAAM PERSONENVERVOER
+         ======================================== -->
+    
+    <!-- Duurzaam Vervoer: Intro -->
+    <section class="hero-image-section" style="background-image: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2070');">
+        <div class="hero-image-content">
+            <h2>Duurzaam personenvervoer en modal shift</h2>
+            <p class="lead">
+                Van fietssnelwegen tot waterbus - slimme mobiliteit
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>De toekomst is multimodaal</h2>
+            <p class="lead">
+                Investeren in alternatieven voor de auto: fietsinfrastructuur, openbaar vervoer, 
+                deelmobiliteit en innovatieve oplossingen zoals de waterbus. Het GIP ondersteunt 
+                de modal shift naar duurzamere vervoerswijzen.
+            </p>
+            <div class="compact-cards">
+                <div class="compact-card">
+                    <h4>€1,5 miljard investering</h4>
+                    <p>148 projecten voor fietsinfrastructuur, OV en nieuwe mobiliteitsconcepten</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Gezonder en groener</h4>
+                    <p>Fietssnelwegen verbinden steden en zorgen voor veilig woon-werkverkeer</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Smart mobility</h4>
+                    <p>Hoppinpunten en waterbus maken overstappen makkelijk en aantrekkelijk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video: Fietsinfrastructuur -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ishQNmTE6jg?autoplay=1&mute=1&loop=1&playlist=ishQNmTE6jg&controls=0&disablekb=1&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3" 
+                    title="Fietssnelweg F24 Leuven-Tienen" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video-caption">
+            <h3>Fietssnelwegen</h3>
+            <p>Vlotte, groene fietsroutes verbinden steden voor woon-werkverkeer</p>
+            <p class="budget-highlight" id="budget-fietsinfrastructuur">€452M fietsinfrastructuur • 62 projecten</p>
+        </div>
+    </section>
+
+
+
+    <!-- ========================================
+         CATEGORIE 4: WATERBEHEERSING
+         ======================================== -->
+    
+    <!-- Waterbeheersing: Intro -->
+    <section class="hero-image-section" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2070');">
+        <div class="hero-image-content">
+            <h2>Waterbeheersing</h2>
+            <p class="lead">
+                Beschermen tegen overstromingen en klimaatadaptatie
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Klimaatbestendig Vlaanderen</h2>
+            <p class="lead">
+                Het Sigmaplan is Europa's grootste overstromingsbeschermingsplan. Met gecontroleerde 
+                overstromingsgebieden, dijkverhogingen en natuurontwikkeling beschermt Vlaanderen 
+                zichzelf tegen stormvloeden en extreme neerslag.
+            </p>
+            <blockquote>
+                "Water is onze bondgenoot én onze uitdaging. Het Sigmaplan toont dat veiligheid 
+                en natuur hand in hand kunnen gaan."
+            </blockquote>
+            <div class="compact-cards">
+                <div class="compact-card">
+                    <h4>€329 miljoen investering</h4>
+                    <p>61 projecten voor dijken, overstromingsgebieden en waterbeheersing</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Veiligheid & natuur</h4>
+                    <p>Gecontroleerde overstromingsgebieden combineren bescherming met natuurherstel</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Klimaatadaptatie</h4>
+                    <p>Robuuste waterbeheersing beschermt tegen extremen en beperkt schade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video: Sigmaplan -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline preload="metadata" 
+               title="Sigmaplan Vlassenbroek"
+               class="video-player">
+            <source src="assets/waterbeheersing.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video. <a href="assets/waterbeheersing.mp4">Download the video</a> instead.</p>
+        </video>
+        </div>
+        <div class="video-caption">
+            <h3>Sigmaplan</h3>
+            <p>Gecontroleerde overstromingsgebieden beschermen én versterken de natuur</p>
+            <p class="budget-highlight" id="budget-sigmaplan">€80M dijken en waterbeheer • 6 projecten</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CATEGORIE 5: GROTE INVESTERINGEN ZEEHAVENS
+         ======================================== -->
+    
+    <!-- Zeehavens: Intro -->
+    <section class="hero-image-section hero-zeehavens">
+        <div class="hero-image-content">
+            <h2>Grote investeringen in de zeehavens</h2>
+            <p class="lead">
+                Sluizen, kades en multimodale aansluitingen
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Havens als economische motoren</h2>
+            <p class="lead">
+                De Vlaamse zeehavens zijn cruciaal voor de economie. Investeringen in nieuwe sluizen, 
+                kade-uitbreidingen en multimodale aansluitingen zorgen voor capaciteitsuitbreiding 
+                en duurzamere havenactiviteiten.
+            </p>
+            <div class="compact-cards">
+                <div class="compact-card">
+                    <h4>€272 miljoen investering</h4>
+                    <p>9 projecten in Antwerpen, Zeebrugge en Oostende</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Capaciteit vergroten</h4>
+                    <p>Nieuwe sluizen en terminals voor grotere schepen en meer volume</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Duurzame havens</h4>
+                    <p>Walstroom, elektrificatie en multimodale overslag verminderen CO₂</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video: Albertkanaal Bruggen -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline preload="metadata" 
+               title="Albertkanaal Bruggen"
+               class="video-player">
+            <source src="assets/albertkanaal.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video. <a href="assets/albertkanaal.mp4">Download the video</a> instead.</p>
+        </video>
+        </div>
+        <div class="video-caption">
+            <h3>Albertkanaal: bruggen verhogen</h3>
+            <p>Twaalf bruggen worden verhoogd voor grotere containerschepen</p>
+            <p class="budget-highlight" id="budget-albertkanaal">€50M investering • 6 projecten</p>
+        </div>
+    </section>
+
+   
+    <!-- ========================================
+         CATEGORIE 6: DIVERSEN EN RECURRENTE KOSTEN
+         ======================================== -->
+    
+    <!-- Diversen: Intro -->
+    <section class="hero-image-section" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070');">
+        <div class="hero-image-content">
+            <h2>Diversen en recurrente kosten</h2>
+            <p class="lead">
+                Innovatie, studies en beleidsondersteuning
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>De basis voor innovatie</h2>
+            <p class="lead">
+                Naast grote infrastructuurwerken investeert het GIP ook in studies, innovatieprojecten, 
+                verkeersveiligheidsinitiatieven en recurrente kosten die nodig zijn om het beleid 
+                te ondersteunen en toekomstige projecten voor te bereiden.
+            </p>
+            <div class="compact-cards">
+                <div class="compact-card">
+                    <h4>€597 miljoen</h4>
+                    <p>35 projecten voor studies, innovatie en beleidsondersteuning</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Toekomstgericht</h4>
+                    <p>Haalbaarheidsstudies en pilots voor innovatieve mobiliteitsoplossingen</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Verkeersveiligheid</h4>
+                    <p>Campagnes, black spot aanpakken en veilige schoolomgevingen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         INTERACTIEVE KAART & DASHBOARD
+         ======================================== -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Ontdek de projecten bij jou in de buurt</h2>
+            <p class="lead">
+                De interactieve kaart toont geografisch waar de investeringen plaatsvinden. 
+                Elk project is gekleurd volgens startjaar en de grootte van de marker geeft het 
+                investeringsbedrag weer.
+            </p>
+            <div class="highlight-box" style="background: #fff3e0; border-left-color: #ff9800;">
+                <p style="margin: 0; color: #e65100;">
+                    <strong>Let op:</strong> Van de 774 investeringsprojecten kunnen er 570 op de kaart weergegeven worden. 
+                    Voor de overige projecten ontbreekt voldoende locatie-informatie. De geografische posities zijn deels 
+                    automatisch bepaald op basis van locatienamen en gemeenten, waardoor er onnauwkeurigheden kunnen voorkomen.
+                </p>
+            </div>
+            <div class="highlight-box">
+                <h3>Hoe de kaart gebruiken</h3>
+                <ul>
+                    <li><strong>Klik op een marker</strong> om details van het project te zien</li>
+                    <li><strong>Gebruik de filters</strong> bovenaan om projecten te filteren op programma</li>
+                    <li><strong>Zoom en pan</strong> met de knoppen of door te klikken en slepen</li>
+                    <li><strong>Kleurcodering:</strong> <span style="color: #ff4000">●</span> 2025 <span style="color: #3f334d">●</span> 2026 <span style="color: #c1809d">●</span> 2027</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section: All Projects Overview -->
+    <section class="map-section" data-filter="all" id="complete-overview-section">
+        <div class="map-overlay map-overlay-fade" id="complete-overview-overlay">
+            <h2>Het complete overzicht</h2>
+            <p>Alle 774 investeringsprojecten op één kaart - €7,4 miljard voor de Vlaamse infrastructuur</p>
+        </div>
+        <div id="map-all" class="map-container"></div>
+    </section>
+
+    <!-- Content: Dashboard Uitleg -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Duik dieper in de cijfers</h2>
+            <p class="lead">
+                Wil je meer weten over specifieke projecten, budgetverdeling of regionale investeringen? 
+                Het interactieve dashboard biedt gedetailleerde inzichten in alle 774 projecten. Doorzoek, 
+                filter op programma of gemeente, en analyseer de budgetverdeling per jaar.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dashboard Integration -->
+    <section class="dashboard-section">
+        <div class="content-container">
+            <!-- Filters -->
+            <div class="dashboard-filters">
+                <h2>Filters en Zoekopdrachten</h2>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="search">Zoeken</label>
+                        <input type="text" id="search" placeholder="Zoek op projectnaam, locatie, gemeente...">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-programma">Programma</label>
+                        <select id="filter-programma">
+                            <option value="">Alle programma's</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-entiteit">Entiteit</label>
+                        <select id="filter-entiteit">
+                            <option value="">Alle entiteiten</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-startjaar">Startjaar</label>
+                        <select id="filter-startjaar">
+                            <option value="">Alle jaren</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-gemeente">Gemeente</label>
+                        <input type="text" id="filter-gemeente" placeholder="Filter op gemeente...">
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button id="reset-filters" class="btn-secondary">Reset filters</button>
+                    <button id="export-csv" class="btn-primary">Exporteer naar CSV</button>
+                </div>
+            </div>
+
+            <!-- Results Info -->
+            <div class="results-info">
+                <span id="results-count">-</span> investeringsprojecten gevonden
+                <span class="filtered-budget">Totaal budget gefilterde selectie: <strong id="filtered-budget">-</strong></span>
+            </div>
+
+            <!-- Table -->
+            <div class="table-container">
+                <table id="projects-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable col-project" data-column="project_naam">Project</th>
+                            <th class="sortable col-entiteit" data-column="entiteit">Entiteit</th>
+                            <th class="sortable col-gemeenten" data-column="gemeenten">Gemeenten</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2025">2025</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2026">2026</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2027">2027</th>
+                            <th class="sortable numeric col-budget" data-column="totaal_budget">Totaal</th>
+                            <th class="sortable col-jaar" data-column="start_jaar">Start</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button id="prev-page" class="btn-secondary">« Vorige</button>
+                <span id="page-info">-</span>
+                <button id="next-page" class="btn-secondary">Volgende »</button>
+                <select id="items-per-page" aria-label="Items per pagina">
+                    <option value="15" selected>15 per pagina</option>
+                    <option value="25">25 per pagina</option>
+                    <option value="50">50 per pagina</option>
+                    <option value="100">100 per pagina</option>
+                    <option value="500">500 per pagina</option>
+                    <option value="all">Alles tonen</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="longread-footer">
+        <div class="footer-content">
+            <p>
+                <strong>Bron:</strong> Vlaamse Regering, 14 juli 2025 - 
+                VR 2025 1407 MED.0277-4: Geïntegreerd Investeringsprogramma 2025-2029 
+                van het beleidsdomein Mobiliteit en Openbare Werken
+            </p>
+            <p class="footer-links">
+                <a href="/gip-dashboard/dashboard/index.html" class="footer-btn">Dashboard</a>
+                <a href="/gip-dashboard/web/index.html" class="footer-btn">Kaart</a>
+                <a href="#top" class="footer-btn">Terug naar boven</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/longread.js"></script>
+    <script src="js/dashboard-integration.js"></script>
+</body>
+</html>

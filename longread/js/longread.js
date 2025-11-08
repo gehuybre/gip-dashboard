@@ -172,10 +172,10 @@ class LongreadMaps {
                 const [lat, lon] = project.coordinates;
                 
                 // Determine color based on start year
-                let color = '#bababa';
-                if (project.investment_start_year === 2025) color = '#ff4000';
-                else if (project.investment_start_year === 2026) color = '#3f334d';
-                else if (project.investment_start_year === 2027) color = '#c1809d';
+                let color = '#029453'; // Primary green as default instead of gray
+                if (project.investment_start_year === 2025) color = '#029453'; // Primary green
+                else if (project.investment_start_year === 2026) color = '#184382'; // Secondary blue
+                else if (project.investment_start_year === 2027) color = '#10cfc9'; // Accent cyan
                 
                 // Calculate marker size
                 const totalBudget = (project.budgets?.budget_2025 || 0) + 
@@ -192,7 +192,7 @@ class LongreadMaps {
                 const marker = L.circleMarker([lat, lon], {
                     radius: radius,
                     fillColor: color,
-                    color: '#fff',
+                    color: '#333', // Dark border for better visibility
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 0.7
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',
-                    block: 'start'
+                    block: 'nearest' // Changed from 'start' to 'nearest' to prevent jumping
                 });
             }
         });
