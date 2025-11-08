@@ -15,7 +15,7 @@ body {
 }
 
 #header {
-    background: #ff4000;
+    background: #029453;
     color: white;
     padding: 15px 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -134,15 +134,15 @@ body {
 }
 
 .legend-2025 {
-    background-color: #ff4000;
+    background-color: #029453;
 }
 
 .legend-2026 {
-    background-color: #3f334d;
+    background-color: #184382;
 }
 
 .legend-2027 {
-    background-color: #c1809d;
+    background-color: #10cfc9;
 }
 
 .legend-no-budget {
@@ -387,9 +387,9 @@ body {
     border: 2px solid white;
 }
 
-.legend-color.year-2025 { background-color: #FF6B6B; }
-.legend-color.year-2026 { background-color: #4ECDC4; }
-.legend-color.year-2027 { background-color: #45B7D1; }
+.legend-color.year-2025 { background-color: #029453; }
+.legend-color.year-2026 { background-color: #184382; }
+.legend-color.year-2027 { background-color: #10cfc9; }
 .legend-color.no-budget { background-color: #95A5A6; }
 
 /* Budget section in popup */
