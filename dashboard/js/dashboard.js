@@ -203,9 +203,10 @@ class GIPDashboard {
                 
                 // Determine color based on start year (volgens Vlaamse overheid kleurenschema)
                 let color = '#bababa'; // lichtgrijs for no budget
-                if (project.investment_start_year === 2025) color = '#029453'; // Primary green
-                else if (project.investment_start_year === 2026) color = '#184382'; // Secondary blue
-                else if (project.investment_start_year === 2027) color = '#10cfc9'; // Accent cyan
+                const startYear = project.investment_start_year || project.start_jaar;
+                if (startYear === 2025) color = '#029453'; // Primary green
+                else if (startYear === 2026) color = '#184382'; // Secondary blue
+                else if (startYear === 2027) color = '#10cfc9'; // Accent cyan
                 
                 // Calculate marker size based on budget
                 const totalBudget = (project.budgets?.budget_2025 || 0) + 

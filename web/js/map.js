@@ -121,7 +121,7 @@ class MapDashboard {
     }
     
     async init() {
-        console.log('🚀 Starting GIPMap initialization...');
+        console.log('🚀 Starting MapDashboard initialization...');
         await this.loadDataInChunks();
     }
     
@@ -679,12 +679,12 @@ class MapDashboard {
 
 // Initialize the map when page loads
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 DOM Content Loaded - Starting GIPMap initialization...');
+    console.log('🚀 DOM Content Loaded - Starting MapDashboard initialization...');
     try {
-        const gipMap = new GIPMap();
-        console.log('✅ GIPMap instance created successfully');
+        const mapDashboard = new MapDashboard();
+        console.log('✅ MapDashboard instance created successfully');
     } catch (error) {
-        console.error('💥 Error creating GIPMap:', error);
+        console.error('💥 Error creating MapDashboard:', error);
         console.error('💥 Error stack:', error.stack);
         
         // Show error on screen
