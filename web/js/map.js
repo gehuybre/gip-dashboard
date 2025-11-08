@@ -317,7 +317,7 @@ class MapDashboard {
                 }
                 
                 // Use color for better visibility - updated to new color scheme
-                let color = this.getYearColor(project.investment_start_year) || '#95A5A6';
+                let color = project.year_color || this.getYearColor(project.investment_start_year) || '#95A5A6';
                 
                 // Check if this is a line/road project and create appropriate visualization
                 const isLineProject = this.isLineProject(project);
@@ -637,7 +637,7 @@ class MapDashboard {
             const [lat, lng] = project.coordinates;
             
             if (lat && lng && !isNaN(lat) && !isNaN(lng)) {
-                const color = this.getYearColor(project.investment_start_year) || '#95A5A6';
+                const color = project.year_color || this.getYearColor(project.investment_start_year) || '#95A5A6';
                 
                 const marker = L.circleMarker([lat, lng], {
                     radius: 8,
