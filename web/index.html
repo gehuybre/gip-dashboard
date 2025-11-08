@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="css/layout-template.css" />
+    <link rel="stylesheet" href="css/map-custom.css" />
     <link rel="stylesheet" href="./css/map.css" />
 </head>
 <body>
@@ -16,9 +18,23 @@
     </div>
     
     <div id="app" class="app-hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="logo.png" alt="Mobiliteit en Openbare Werken Vlaanderen" class="header__logo-img">
+                    <div class="header__name">
+                        <h1>GIP Infrastructure Projects 2025-2027</h1>
+                    </div>
+                </div>
+                <nav class="header__navigation">
+                    <a href="../dashboard/index.html" class="btn btn--primary">📊 Dashboard</a>
+                    <a href="../longread/index.html" class="btn btn--secondary">📖 Visueel Verhaal</a>
+                </nav>
+            </div>
+        </header>
+        
         <div id="controls">
-            <h1>GIP Infrastructure Projects 2025-2027</h1>
-            <a href="../dashboard/index.html" class="dashboard-link" style="position: absolute; top: 1rem; right: 1rem; padding: 0.5rem 1rem; background: #0066cc; color: white; text-decoration: none; border-radius: 0; font-weight: 600; font-size: 0.875rem;">Dashboard</a>
             
             <div class="control-group">
                 <label for="year-filter">Filter by Year:</label>

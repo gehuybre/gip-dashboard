@@ -101,19 +101,23 @@ class RoutingService {
     }
 }
 
-class GIPMap {
+class MapDashboard {
     constructor() {
+        this.projects = [];
         this.map = null;
-        this.markersGroup = null;
-        this.polylinesGroup = null;
-        this.data = { projects: [], stats: {} };
-        this.filteredProjects = [];
-        this.isLoading = false;
-        this.routeCache = new Map(); // Cache for route requests
-        this.routingService = new RoutingService();
-        
-        // Start loading data immediately
+        this.markers = [];
+        this.currentFilter = '';
         this.init();
+    }
+
+    // Get color based on year using new color scheme
+    getYearColor(year) {
+        switch(year) {
+            case 2025: return '#029453'; // Primary green
+            case 2026: return '#184382'; // Secondary blue  
+            case 2027: return '#10cfc9'; // Accent cyan
+            default: return '#95A5A6';   // Gray for unknown
+        }
     }
     
     async init() {
@@ -312,8 +316,8 @@ class GIPMap {
                     radius = 7 + (sqrtScale * 18); // Scale from 7 to 25
                 }
                 
-                // Use color for better visibility
-                let color = project.year_color || '#95A5A6';
+                // Use color for better visibility - updated to new color scheme
+                let color = this.getYearColor(project.investment_start_year) || '#95A5A6';
                 
                 // Check if this is a line/road project and create appropriate visualization
                 const isLineProject = this.isLineProject(project);
@@ -633,7 +637,7 @@ class GIPMap {
             const [lat, lng] = project.coordinates;
             
             if (lat && lng && !isNaN(lat) && !isNaN(lng)) {
-                const color = project.year_color || '#95A5A6';
+                const color = this.getYearColor(project.investment_start_year) || '#95A5A6';
                 
                 const marker = L.circleMarker([lat, lng], {
                     radius: 8,

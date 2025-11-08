@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIP 2025-2027 | Geïntegreerd Investeringsprogramma</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/layout-template.css">
+    <link rel="stylesheet" href="css/dashboard-custom.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Geïntegreerd Investeringsprogramma 2025-2027</h1>
-            <p class="subtitle">Beleidsdomein Mobiliteit en Openbare Werken Vlaanderen</p>
-            <nav class="header-nav">
-                <a href="/gip-dashboard/longread/index.html" class="nav-link">📖 Visueel Verhaal</a>
-                <a href="/gip-dashboard/web/index.html" class="nav-link">🗺️ Kaart</a>
-            </nav>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="logo.png" alt="Mobiliteit en Openbare Werken Vlaanderen" class="header__logo-img">
+                    <div class="header__name">
+                        <h1>Geïntegreerd Investeringsprogramma 2025-2027</h1>
+                        <p class="subtitle">Beleidsdomein Mobiliteit en Openbare Werken Vlaanderen</p>
+                    </div>
+                </div>
+                <nav class="header__navigation">
+                    <a href="/gip-dashboard/longread/index.html" class="btn btn--primary">📖 Visueel Verhaal</a>
+                    <a href="/gip-dashboard/web/index.html" class="btn btn--secondary">🗺️ Kaart</a>
+                </nav>
+            </div>
         </header>
 
         <div class="info-box">
@@ -70,30 +80,29 @@
         <!-- Map Section -->
         <div class="map-section">
             <h2>Geografische Weergave Investeringsprojecten</h2>
-            <p style="margin-bottom: 1rem; color: #6c757d; font-size: 0.9rem;">
-                <strong>Let op:</strong> Van de 778 investeringsprojecten kunnen er 570 op de kaart weergegeven worden. 
-                Voor de overige projecten ontbreekt voldoende locatie-informatie. De geografische posities zijn deels 
-                automatisch bepaald op basis van locatienamen en gemeenten, waardoor er onnauwkeurigheden kunnen voorkomen.
+                        <p class="info-text">
+                <strong>Let op:</strong> Van de 774 investeringsprojecten kunnen er 570 op de kaart weergegeven worden. 
+                Voor de overige projecten ontbreekt voldoende locatie-informatie.
             </p>
             <div class="map-controls">
                 <button id="show-all-map" class="btn-secondary active">Alle projecten</button>
                 <button id="show-filtered-map" class="btn-secondary">Gefilterde selectie</button>
                 <div class="map-legend">
                     <div class="legend-item">
-                        <span class="legend-marker" style="background: #ff4000;"></span>
+                        <span class="legend-marker legend-marker-2025"></span>
                         <span>2025</span>
                     </div>
                     <div class="legend-item">
-                        <span class="legend-marker" style="background: #3f334d;"></span>
+                        <span class="legend-marker legend-marker-2026"></span>
                         <span>2026</span>
                     </div>
                     <div class="legend-item">
-                        <span class="legend-marker" style="background: #c1809d;"></span>
+                        <span class="legend-marker legend-marker-2027"></span>
                         <span>2027</span>
                     </div>
                     <div class="legend-item">
-                        <span class="legend-marker" style="background: #bababa;"></span>
-                        <span>Geen budget</span>
+                        <span class="legend-marker legend-marker-unknown"></span>
+                        <span>Onbekend</span>
                     </div>
                 </div>
             </div>
