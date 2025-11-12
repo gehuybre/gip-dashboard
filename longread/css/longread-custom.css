@@ -129,6 +129,12 @@ html {
   background: linear-gradient(135deg, #029453, #184382);
 }
 
+.hero-asset-management .hero__title,
+.hero-asset-management .hero__tagline {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 .hero-grote-werken {
   background: 
     linear-gradient(135deg, rgba(24, 67, 130, 0.7), rgba(2, 148, 83, 0.7)),
@@ -148,8 +154,20 @@ html {
   background: linear-gradient(135deg, #10cfc9, #029453);
 }
 
+.hero-duurzaam-vervoer .hero__title,
+.hero-duurzaam-vervoer .hero__tagline {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 .hero-waterbeheersing {
   background: linear-gradient(135deg, #184382, #10cfc9);
+}
+
+.hero-waterbeheersing .hero__title,
+.hero-waterbeheersing .hero__tagline {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-zeehavens {
@@ -169,6 +187,12 @@ html {
 
 .hero-diversen {
   background: linear-gradient(135deg, #10cfc9, #184382);
+}
+
+.hero-diversen .hero__title,
+.hero-diversen .hero__tagline {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Color coding for years - updated to match new color scheme */
