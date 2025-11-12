@@ -151,7 +151,12 @@ html {
 }
 
 .hero-duurzaam-vervoer {
-  background: linear-gradient(135deg, #10cfc9, #029453);
+  background: 
+    linear-gradient(135deg, rgba(16, 207, 201, 0.7), rgba(2, 148, 83, 0.7)),
+    url('../assets/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-duurzaam-vervoer .hero__title,
@@ -161,7 +166,12 @@ html {
 }
 
 .hero-waterbeheersing {
-  background: linear-gradient(135deg, #184382, #10cfc9);
+  background: 
+    linear-gradient(135deg, rgba(24, 67, 130, 0.7), rgba(16, 207, 201, 0.7)),
+    url('../assets/demet-kayabasi-GtshVNCTyTs-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-waterbeheersing .hero__title,
@@ -186,7 +196,12 @@ html {
 }
 
 .hero-diversen {
-  background: linear-gradient(135deg, #10cfc9, #184382);
+  background: 
+    linear-gradient(135deg, rgba(16, 207, 201, 0.7), rgba(24, 67, 130, 0.7)),
+    url('../assets/multimodaal.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-diversen .hero__title,
