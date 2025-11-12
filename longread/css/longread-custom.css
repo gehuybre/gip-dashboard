@@ -126,8 +126,12 @@ html {
 
 /* Hero section variants - Updated with background images */
 .hero-asset-management {
-  background: linear-gradient(135deg, #029453, #184382);
-  border: 5px solid red; /* TEST BORDER */
+  background: 
+    linear-gradient(135deg, rgba(2, 148, 83, 0.7), rgba(24, 67, 130, 0.7)),
+    url('./assets/peter-heymans-ooh4m2HdEls-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-asset-management .hero__title,
@@ -138,7 +142,7 @@ html {
 
 .hero-grote-werken {
   background: 
-    linear-gradient(135deg, rgba(24, 67, 130, 0.7), rgba(2, 148, 83, 0.7)),
+    linear-gradient(135deg, rgba(24, 67, 130, 0.85), rgba(2, 148, 83, 0.85)),
     url('../assets/peter-heymans-ooh4m2HdEls-unsplash.jpg');
   background-size: cover;
   background-position: center;
@@ -153,7 +157,7 @@ html {
 
 .hero-duurzaam-vervoer {
   background: 
-    linear-gradient(135deg, rgba(16, 207, 201, 0.7), rgba(2, 148, 83, 0.7)),
+    linear-gradient(135deg, rgba(16, 207, 201, 0.85), rgba(2, 148, 83, 0.85)),
     url('../assets/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
   background-size: cover;
   background-position: center;
@@ -168,7 +172,7 @@ html {
 
 .hero-waterbeheersing {
   background: 
-    linear-gradient(135deg, rgba(24, 67, 130, 0.7), rgba(16, 207, 201, 0.7)),
+    linear-gradient(135deg, rgba(24, 67, 130, 0.85), rgba(16, 207, 201, 0.85)),
     url('../assets/demet-kayabasi-GtshVNCTyTs-unsplash.jpg');
   background-size: cover;
   background-position: center;
@@ -183,7 +187,7 @@ html {
 
 .hero-zeehavens {
   background: 
-    linear-gradient(135deg, rgba(2, 148, 83, 0.7), rgba(24, 67, 130, 0.7)),
+    linear-gradient(135deg, rgba(2, 148, 83, 0.85), rgba(24, 67, 130, 0.85)),
     url('../assets/jannes-van-den-wouwer-Gv9ZvAojDN4-unsplash.jpg');
   background-size: cover;
   background-position: center;
@@ -198,7 +202,7 @@ html {
 
 .hero-diversen {
   background: 
-    linear-gradient(135deg, rgba(16, 207, 201, 0.7), rgba(24, 67, 130, 0.7)),
+    linear-gradient(135deg, rgba(16, 207, 201, 0.85), rgba(24, 67, 130, 0.85)),
     url('../assets/multimodaal.png');
   background-size: cover;
   background-position: center;
