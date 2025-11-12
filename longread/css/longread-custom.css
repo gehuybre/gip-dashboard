@@ -172,7 +172,7 @@ html {
 
 .hero-waterbeheersing {
   background: 
-    linear-gradient(135deg, rgba(24, 67, 130, 0.85), rgba(16, 207, 201, 0.85)),
+    linear-gradient(135deg, rgba(255, 0, 0, 0.9), rgba(0, 0, 255, 0.9)),
     url('../assets/demet-kayabasi-GtshVNCTyTs-unsplash.jpg');
   background-size: cover;
   background-position: center;
