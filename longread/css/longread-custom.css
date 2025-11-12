@@ -124,9 +124,10 @@ html {
   color: var(--primary-color);
 }
 
-/* Hero section variants */
+/* Hero section variants - Updated with background images */
 .hero-asset-management {
   background: linear-gradient(135deg, #029453, #184382);
+  border: 5px solid red; /* TEST BORDER */
 }
 
 .hero-asset-management .hero__title,
