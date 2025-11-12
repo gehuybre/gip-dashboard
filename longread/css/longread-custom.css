@@ -130,7 +130,18 @@ html {
 }
 
 .hero-grote-werken {
-  background: linear-gradient(135deg, #184382, #029453);
+  background: 
+    linear-gradient(135deg, rgba(24, 67, 130, 0.7), rgba(2, 148, 83, 0.7)),
+    url('../assets/peter-heymans-ooh4m2HdEls-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-grote-werken .hero__title,
+.hero-grote-werken .hero__tagline {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-duurzaam-vervoer {
