@@ -156,13 +156,31 @@ html {
 }
 
 .hero-duurzaam-vervoer {
-  background-image: 
-    linear-gradient(135deg, rgba(16, 207, 201, 0.85), rgba(2, 148, 83, 0.85)),
-    url('../assets/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
+  /* Fallback solid background */
+  background-color: #10cfc9;
+  /* Background image first */
+  background-image: url('../assets/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.hero-duurzaam-vervoer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(16, 207, 201, 0.85), rgba(2, 148, 83, 0.85));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-duurzaam-vervoer .hero__content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-duurzaam-vervoer .hero__title,
@@ -172,13 +190,31 @@ html {
 }
 
 .hero-waterbeheersing {
-  background-image: 
-    linear-gradient(135deg, rgba(24, 67, 130, 0.85), rgba(16, 207, 201, 0.85)),
-    url('../assets/demet-kayabasi-GtshVNCTyTs-unsplash.jpg');
+  /* Fallback solid background */
+  background-color: #184382;
+  /* Background image first */
+  background-image: url('../assets/demet-kayabasi-GtshVNCTyTs-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.hero-waterbeheersing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(24, 67, 130, 0.85), rgba(16, 207, 201, 0.85));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-waterbeheersing .hero__content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-waterbeheersing .hero__title,
@@ -203,13 +239,31 @@ html {
 }
 
 .hero-diversen {
-  background-image: 
-    linear-gradient(135deg, rgba(16, 207, 201, 0.85), rgba(24, 67, 130, 0.85)),
-    url('../assets/multimodaal.png');
+  /* Fallback solid background */
+  background-color: #10cfc9;
+  /* Background image first */
+  background-image: url('../assets/multimodaal.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.hero-diversen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(16, 207, 201, 0.85), rgba(24, 67, 130, 0.85));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-diversen .hero__content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-diversen .hero__title,
