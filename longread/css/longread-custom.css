@@ -153,7 +153,18 @@ html {
 }
 
 .hero-zeehavens {
-  background: linear-gradient(135deg, #029453, #184382);
+  background: 
+    linear-gradient(135deg, rgba(2, 148, 83, 0.7), rgba(24, 67, 130, 0.7)),
+    url('../assets/jannes-van-den-wouwer-Gv9ZvAojDN4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-zeehavens .hero__title,
+.hero-zeehavens .hero__tagline {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-diversen {
