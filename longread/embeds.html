@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIP 2025-2029 Embed Codes</title>
+    <meta name="description" content="Embed codes voor het GIP-dashboard en de interactieve kaart">
+    <link rel="stylesheet" href="css/layout-template.css">
+    <link rel="stylesheet" href="css/longread-custom.css">
+    <style>
+        .embed-page {
+            background: #f6f7f9;
+        }
+        .embed-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+        .embed-code {
+            background: #0f172a;
+            color: #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.9rem;
+        }
+        .embed-preview {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 1rem;
+            background: #fff;
+        }
+        .embed-iframe {
+            width: 100%;
+            border: 0;
+            display: block;
+        }
+        .embed-note {
+            margin-top: 0.5rem;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .embed-code {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body class="embed-page">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="logo.png" alt="Mobiliteit en Openbare Werken Vlaanderen" class="header__logo-img">
+            </div>
+            <div class="header__menu">
+                <nav class="header__navigation">
+                    <a href="index.html">Longread</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Embed codes</h1>
+            <p class="hero__subtitle">GIP 2025-2029 dashboard en kaart</p>
+            <p class="hero__tagline">Gebruik deze iframes om de interactieve onderdelen extern te embedden.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="embed-card">
+                <h2 class="mb-sm">Dashboard (zonder kaart)</h2>
+                <div class="embed-code">
+<pre><code>&lt;iframe
+    title="GIP Dashboard"
+    src="https://gerthuybrechts.github.io/gip-dashboard/dashboard/index.html?embed=true"
+    width="100%"
+    height="900"
+    style="border:0;min-height:900px;"
+    loading="lazy"
+&gt;&lt;/iframe&gt;</code></pre>
+                </div>
+                <p class="embed-note">GitHub Pages: pas de domeinnaam aan als je gebruikersnaam anders is.</p>
+                <div class="embed-preview">
+                    <iframe
+                        class="embed-iframe"
+                        title="GIP Dashboard Preview"
+                        src="https://gerthuybrechts.github.io/gip-dashboard/dashboard/index.html?embed=true"
+                        height="900"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="embed-card">
+                <h2 class="mb-sm">Interactieve kaart</h2>
+                <div class="embed-code">
+<pre><code>&lt;iframe
+    title="GIP Projectenkaart"
+    src="https://gerthuybrechts.github.io/gip-dashboard/web/index.html"
+    width="100%"
+    height="700"
+    style="border:0;min-height:700px;"
+    loading="lazy"
+&gt;&lt;/iframe&gt;</code></pre>
+                </div>
+                <p class="embed-note">GitHub Pages: pas de domeinnaam aan als je gebruikersnaam anders is.</p>
+                <div class="embed-preview">
+                    <iframe
+                        class="embed-iframe"
+                        title="GIP Projectenkaart Preview"
+                        src="https://gerthuybrechts.github.io/gip-dashboard/web/index.html"
+                        height="700"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
