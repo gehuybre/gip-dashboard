@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIP Dashboard | Verbinden en Vernieuwen</title>
+    <meta name="description" content="Interactief dashboard met gedetailleerde informatie over alle 774 investeringsprojecten van het GIP 2025-2029">
+    <link rel="stylesheet" href="css/layout-template.css">
+    <link rel="stylesheet" href="css/longread-custom.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f6f7f9;
+        }
+        .content-section {
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .dashboard-section {
+            padding: 2rem 1rem;
+        }
+        @media (max-width: 768px) {
+            .content-section {
+                padding: 1.5rem 1rem;
+            }
+            .dashboard-section {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Content: Dashboard Explanation -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="mb-md">Duik dieper in de cijfers</h2>
+            <p class="lead">
+                Wil je meer weten over specifieke projecten, budgetverdeling of regionale investeringen?
+                Het interactieve dashboard biedt gedetailleerde inzichten in alle 774 projecten. Doorzoek,
+                filter op programma of gemeente, en analyseer de budgetverdeling per jaar.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dashboard Integration -->
+    <section class="dashboard-section bg-gray" id="dashboard-sectie">
+        <div class="container">
+            <!-- Filters -->
+            <div class="dashboard-filters">
+                <h2>Filters en Zoekopdrachten</h2>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="search">Zoeken</label>
+                        <input type="text" id="search" placeholder="Zoek op projectnaam, locatie, gemeente...">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-programma">Programma</label>
+                        <select id="filter-programma">
+                            <option value="">Alle programma's</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-entiteit">Entiteit</label>
+                        <select id="filter-entiteit">
+                            <option value="">Alle entiteiten</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-startjaar">Startjaar</label>
+                        <select id="filter-startjaar">
+                            <option value="">Alle jaren</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-gemeente">Gemeente</label>
+                        <input type="text" id="filter-gemeente" placeholder="Filter op gemeente...">
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button id="reset-filters" class="btn-secondary">Reset filters</button>
+                    <button id="export-csv" class="btn-primary">Exporteer naar CSV</button>
+                </div>
+            </div>
+
+            <!-- Results Info -->
+            <div class="results-info">
+                <span id="results-count">-</span> investeringsprojecten gevonden
+                <span class="filtered-budget">Totaal budget gefilterde selectie: <strong id="filtered-budget">-</strong></span>
+            </div>
+
+            <!-- Table -->
+            <div class="table-container">
+                <table id="projects-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable col-project" data-column="project_naam">Project</th>
+                            <th class="sortable col-entiteit" data-column="entiteit">Entiteit</th>
+                            <th class="sortable col-gemeenten" data-column="gemeenten">Gemeenten</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2025">2025</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2026">2026</th>
+                            <th class="sortable numeric col-budget" data-column="budget_2027">2027</th>
+                            <th class="sortable numeric col-budget" data-column="totaal_budget">Totaal</th>
+                            <th class="sortable col-jaar" data-column="start_jaar">Start</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button id="prev-page" class="btn-secondary">« Vorige</button>
+                <span id="page-info">-</span>
+                <button id="next-page" class="btn-secondary">Volgende »</button>
+                <select id="items-per-page" aria-label="Items per pagina">
+                    <option value="15" selected>15 per pagina</option>
+                    <option value="25">25 per pagina</option>
+                    <option value="50">50 per pagina</option>
+                    <option value="100">100 per pagina</option>
+                    <option value="500">500 per pagina</option>
+                    <option value="all">Alles tonen</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // GIP Dashboard for Embed - Standalone Version
+        class ProjectDashboard {
+            constructor() {
+                this.allProjects = [];
+                this.filteredProjects = [];
+                this.currentPage = 1;
+                this.itemsPerPage = 15;
+                this.sortColumn = 'id';
+                this.sortDirection = 'asc';
+
+                this.init();
+            }
+
+            async init() {
+                await this.loadData();
+                this.setupEventListeners();
+                this.populateFilters();
+                this.applyFilters();
+            }
+
+            async loadData() {
+                try {
+                    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+                    const isGitHubPages = window.location.hostname.includes('github.io');
+
+                    let basePath;
+                    if (isLocalhost) {
+                        basePath = '../dashboard/';
+                    } else if (isGitHubPages) {
+                        basePath = '/gip-dashboard/dashboard/';
+                    } else {
+                        basePath = '../dashboard/';
+                    }
+
+                    console.log('Loading data from:', basePath + 'all_projects.json');
+                    const response = await fetch(basePath + 'all_projects.json');
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    this.allProjects = data.projects;
+                    this.filteredProjects = [...this.allProjects];
+                    console.log(`✅ Loaded ${this.allProjects.length} projects`);
+                } catch (error) {
+                    console.error('Error loading project data:', error);
+                    const errorMsg = document.createElement('div');
+                    errorMsg.className = 'error-message';
+                    errorMsg.style.cssText = 'background: #fee; border-left: 4px solid #f00; padding: 1rem; margin: 1rem 0; border-radius: 4px;';
+                    errorMsg.innerHTML = `<strong>Fout bij laden van data:</strong> ${error.message}<br>Probeer de pagina te verversen.`;
+                    const container = document.querySelector('.dashboard-section .container');
+                    if (container) container.insertBefore(errorMsg, container.firstChild);
+                }
+            }
+
+            setupEventListeners() {
+                document.getElementById('search').addEventListener('input', () => this.applyFilters());
+                document.getElementById('filter-programma').addEventListener('change', () => this.applyFilters());
+                document.getElementById('filter-entiteit').addEventListener('change', () => this.applyFilters());
+                document.getElementById('filter-startjaar').addEventListener('change', () => this.applyFilters());
+                document.getElementById('filter-gemeente').addEventListener('input', () => this.applyFilters());
+                document.getElementById('reset-filters').addEventListener('click', () => this.resetFilters());
+                document.getElementById('export-csv').addEventListener('click', () => this.exportToCSV());
+                document.getElementById('prev-page').addEventListener('click', () => this.changePage(-1));
+                document.getElementById('next-page').addEventListener('click', () => this.changePage(1));
+                document.getElementById('items-per-page').addEventListener('change', (e) => {
+                    this.itemsPerPage = e.target.value === 'all' ? this.filteredProjects.length : parseInt(e.target.value);
+                    this.currentPage = 1;
+                    this.renderTable();
+                });
+
+                document.querySelectorAll('#projects-table th.sortable').forEach(th => {
+                    th.addEventListener('click', () => {
+                        const column = th.dataset.column;
+                        if (this.sortColumn === column) {
+                            this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+                        } else {
+                            this.sortColumn = column;
+                            this.sortDirection = 'asc';
+                        }
+                        this.renderTable();
+                    });
+                });
+            }
+
+            populateFilters() {
+                const programmas = [...new Set(this.allProjects.map(p => p.programma))].filter(p => p).sort();
+                const entiteiten = [...new Set(this.allProjects.map(p => p.entiteit))].filter(e => e).sort();
+                const startjaren = [...new Set(this.allProjects
+                    .map(p => p.start_jaar)
+                    .filter(j => j != null && j !== '' && !isNaN(j))
+                    .map(j => Number(j))
+                )].sort((a, b) => a - b);
+
+                const programmaSelect = document.getElementById('filter-programma');
+                programmas.forEach(prog => {
+                    const option = document.createElement('option');
+                    option.value = prog;
+                    option.textContent = prog;
+                    programmaSelect.appendChild(option);
+                });
+
+                const entiteitSelect = document.getElementById('filter-entiteit');
+                entiteiten.forEach(ent => {
+                    const option = document.createElement('option');
+                    option.value = ent;
+                    option.textContent = ent;
+                    entiteitSelect.appendChild(option);
+                });
+
+                const startjaarSelect = document.getElementById('filter-startjaar');
+                startjaren.forEach(jaar => {
+                    const option = document.createElement('option');
+                    option.value = jaar;
+                    option.textContent = jaar;
+                    startjaarSelect.appendChild(option);
+                });
+            }
+
+            applyFilters() {
+                const searchTerm = document.getElementById('search').value.toLowerCase();
+                const programma = document.getElementById('filter-programma').value;
+                const entiteit = document.getElementById('filter-entiteit').value;
+                const startjaar = document.getElementById('filter-startjaar').value;
+                const gemeente = document.getElementById('filter-gemeente').value.toLowerCase();
+
+                this.filteredProjects = this.allProjects.filter(project => {
+                    const matchesSearch = !searchTerm ||
+                        (project.project_naam && project.project_naam.toLowerCase().includes(searchTerm)) ||
+                        (project.locatie && project.locatie.toLowerCase().includes(searchTerm)) ||
+                        (project.gemeenten && project.gemeenten.toLowerCase().includes(searchTerm));
+
+                    const matchesProgramma = !programma || project.programma === programma;
+                    const matchesEntiteit = !entiteit || project.entiteit === entiteit;
+                    const matchesStartjaar = !startjaar || project.start_jaar == startjaar;
+                    const matchesGemeente = !gemeente ||
+                        (project.gemeenten && project.gemeenten.toLowerCase().includes(gemeente));
+
+                    return matchesSearch && matchesProgramma && matchesEntiteit &&
+                           matchesStartjaar && matchesGemeente;
+                });
+
+                this.currentPage = 1;
+                this.renderTable();
+                this.updateResultsInfo();
+            }
+
+            resetFilters() {
+                document.getElementById('search').value = '';
+                document.getElementById('filter-programma').value = '';
+                document.getElementById('filter-entiteit').value = '';
+                document.getElementById('filter-startjaar').value = '';
+                document.getElementById('filter-gemeente').value = '';
+                this.applyFilters();
+            }
+
+            renderTable() {
+                const sorted = [...this.filteredProjects].sort((a, b) => {
+                    let aVal = a[this.sortColumn];
+                    let bVal = b[this.sortColumn];
+
+                    if (typeof aVal === 'number' && typeof bVal === 'number') {
+                        return this.sortDirection === 'asc' ? aVal - bVal : bVal - aVal;
+                    }
+
+                    aVal = String(aVal || '').toLowerCase();
+                    bVal = String(bVal || '').toLowerCase();
+
+                    if (this.sortDirection === 'asc') {
+                        return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                    } else {
+                        return bVal < aVal ? -1 : bVal > aVal ? 1 : 0;
+                    }
+                });
+
+                const start = (this.currentPage - 1) * this.itemsPerPage;
+                const end = start + this.itemsPerPage;
+                const pageProjects = sorted.slice(start, end);
+
+                const tbody = document.getElementById('table-body');
+                tbody.innerHTML = pageProjects.map(project => `
+                    <tr>
+                        <td class="col-project">${project.project_naam}</td>
+                        <td class="col-entiteit">${project.entiteit}</td>
+                        <td class="col-gemeenten">${project.gemeenten || '-'}</td>
+                        <td class="col-budget numeric">${this.formatCurrencyShort(project.budget_2025)}</td>
+                        <td class="col-budget numeric">${this.formatCurrencyShort(project.budget_2026)}</td>
+                        <td class="col-budget numeric">${this.formatCurrencyShort(project.budget_2027)}</td>
+                        <td class="col-budget numeric"><strong>${this.formatCurrencyShort(project.totaal_budget)}</strong></td>
+                        <td class="col-jaar">${project.start_jaar || '-'}</td>
+                    </tr>
+                `).join('');
+
+                this.updatePagination();
+            }
+
+            updateResultsInfo() {
+                const totalBudget = this.filteredProjects.reduce((sum, p) => sum + p.totaal_budget, 0);
+                document.getElementById('results-count').textContent = this.filteredProjects.length;
+                document.getElementById('filtered-budget').textContent = this.formatCurrency(totalBudget);
+            }
+
+            updatePagination() {
+                const totalPages = Math.ceil(this.filteredProjects.length / this.itemsPerPage);
+                document.getElementById('page-info').textContent = `Pagina ${this.currentPage} van ${totalPages}`;
+                document.getElementById('prev-page').disabled = this.currentPage === 1;
+                document.getElementById('next-page').disabled = this.currentPage === totalPages;
+            }
+
+            changePage(delta) {
+                const totalPages = Math.ceil(this.filteredProjects.length / this.itemsPerPage);
+                const newPage = this.currentPage + delta;
+                if (newPage >= 1 && newPage <= totalPages) {
+                    this.currentPage = newPage;
+                    this.renderTable();
+                }
+            }
+
+            formatCurrency(amount) {
+                if (!amount || amount === 0) return '-';
+                return '€ ' + amount.toLocaleString('nl-BE', { maximumFractionDigits: 0 });
+            }
+
+            formatCurrencyShort(amount) {
+                if (!amount || amount === 0) return '€0';
+                if (amount >= 1000000) {
+                    return '€' + (amount / 1000000).toFixed(0) + 'M';
+                } else if (amount >= 1000) {
+                    return '€' + (amount / 1000).toFixed(0) + 'K';
+                }
+                return '€' + amount.toFixed(0);
+            }
+
+            exportToCSV() {
+                const headers = ['ID', 'Project', 'Entiteit', 'Gemeenten', 'Infrastructuur',
+                                'Budget 2025', 'Budget 2026', 'Budget 2027', 'Totaal Budget', 'Startjaar'];
+
+                const rows = this.filteredProjects.map(p => [
+                    p.id,
+                    `"${p.project_naam}"`,
+                    `"${p.entiteit}"`,
+                    `"${p.gemeenten || ''}"`,
+                    `"${p.infrastructuur_type}"`,
+                    p.budget_2025,
+                    p.budget_2026,
+                    p.budget_2027,
+                    p.totaal_budget,
+                    p.start_jaar || ''
+                ]);
+
+                const csv = [headers, ...rows].map(row => row.join(',')).join('\n');
+                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = `gip_projecten_${new Date().toISOString().slice(0,10)}.csv`;
+                link.click();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new ProjectDashboard();
+        });
+    </script>
+</body>
+</html>

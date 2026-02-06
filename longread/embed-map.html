@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIP Projectenkaart | Verbinden en Vernieuwen</title>
+    <meta name="description" content="Interactieve kaart met alle 774 investeringsprojecten van het GIP 2025-2029">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/layout-template.css">
+    <link rel="stylesheet" href="css/longread-custom.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .map-section {
+            min-height: 600px;
+            margin: 0;
+        }
+        .content-section {
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        @media (max-width: 768px) {
+            .content-section {
+                padding: 1.5rem 1rem;
+            }
+            .card {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Content: Map Explanation -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="mb-md">Ontdek de projecten bij jou in de buurt</h2>
+            <p class="lead">
+                De interactieve kaart toont geografisch waar de investeringen plaatsvinden.
+                Elk project is gekleurd volgens startjaar en de grootte van de marker geeft het
+                investeringsbedrag weer.
+            </p>
+            <div class="card warning-card">
+                <div class="card__content">
+                    <p class="warning-text">
+                        <strong>Let op:</strong> Van de 774 investeringsprojecten kunnen er 570 op de kaart weergegeven worden.
+                        Voor de overige projecten ontbreekt voldoende locatie-informatie. De geografische posities zijn deels
+                        automatisch bepaald op basis van locatienamen en gemeenten, waardoor er onnauwkeurigheden kunnen voorkomen.
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-sm">
+                <div class="card__header">
+                    <h3 class="card__title">Hoe de kaart gebruiken</h3>
+                </div>
+                <div class="card__content">
+                    <ul>
+                        <li><strong>Klik op een marker</strong> om details van het project te zien</li>
+                        <li><strong>Zoom en pan</strong> met de knoppen of door te klikken en slepen</li>
+                        <li><strong>Kleurcodering:</strong> <span class="color-2025">●</span> 2025 <span class="color-2026">●</span> 2026 <span class="color-2027">●</span> 2027</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section: All Projects Overview -->
+    <section class="map-section" data-filter="all" id="kaart-sectie">
+        <div class="map-overlay map-overlay-fade" id="complete-overview-overlay">
+            <h2>Het complete overzicht</h2>
+            <p>Alle 774 investeringsprojecten op één kaart - €7,4 miljard voor de Vlaamse infrastructuur</p>
+        </div>
+        <div id="map-all" class="map-container"></div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // GIP Map for Embed - Standalone Version
+        class EmbedMaps {
+            constructor() {
+                this.geocodedProjects = [];
+                this.maps = {};
+                this.init();
+            }
+
+            async init() {
+                await this.loadGecodedData();
+                this.initializeMaps();
+                this.loadMapData('map-all');
+            }
+
+            async loadGecodedData() {
+                try {
+                    const chunks = [];
+                    // Determine path based on environment
+                    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '';
+                    const isGitHubPages = window.location.hostname.includes('github.io');
+
+                    let basePath;
+                    if (isLocalhost) {
+                        basePath = '../dashboard/';
+                    } else if (isGitHubPages) {
+                        basePath = '/gip-dashboard/dashboard/';
+                    } else {
+                        basePath = '../dashboard/';
+                    }
+
+                    console.log('Loading geocoded data from:', basePath);
+
+                    for (let i = 1; i <= 6; i++) {
+                        const chunkPath = `${basePath}projects_chunk_0${i}.json`;
+                        const response = await fetch(chunkPath);
+                        if (!response.ok) {
+                            console.warn(`Failed to load chunk ${i}: HTTP ${response.status}`);
+                            continue;
+                        }
+                        const data = await response.json();
+                        chunks.push(...data.projects);
+                    }
+                    this.geocodedProjects = chunks;
+                    console.log(`✅ Loaded ${this.geocodedProjects.length} geocoded projects`);
+                } catch (error) {
+                    console.error('Error loading geocoded data:', error);
+                }
+            }
+
+            initializeMaps() {
+                const mapSections = document.querySelectorAll('.map-section');
+
+                mapSections.forEach((section, index) => {
+                    const mapId = section.querySelector('.map-container').id;
+                    if (!mapId) return;
+
+                    const map = L.map(mapId, {
+                        center: [51.15, 4.4],
+                        zoom: 9,
+                        maxBounds: [[49.5, 2.5], [51.6, 6.4]],
+                        maxBoundsViscosity: 1.0,
+                        minZoom: 7,
+                        maxZoom: 18,
+                        zoomControl: true,
+                        scrollWheelZoom: true
+                    });
+
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                        subdomains: 'abcd',
+                        maxZoom: 18
+                    }).addTo(map);
+
+                    this.maps[mapId] = {
+                        map: map,
+                        markers: null,
+                        loaded: false
+                    };
+                });
+
+                console.log(`✅ Initialized ${Object.keys(this.maps).length} maps`);
+            }
+
+            loadMapData(mapId) {
+                const mapData = this.maps[mapId];
+                if (!mapData || mapData.loaded) return;
+
+                console.log(`Loading data for map: ${mapId}`);
+                this.addMarkers(mapId, this.geocodedProjects);
+                mapData.loaded = true;
+
+                setTimeout(() => {
+                    mapData.map.invalidateSize();
+                }, 100);
+            }
+
+            addMarkers(mapId, projects) {
+                const mapData = this.maps[mapId];
+                if (!mapData) return;
+
+                if (mapData.markers) {
+                    mapData.map.removeLayer(mapData.markers);
+                }
+
+                mapData.markers = L.featureGroup();
+
+                const budgets = projects.map(p =>
+                    (p.budgets?.budget_2025 || 0) + (p.budgets?.budget_2026 || 0) + (p.budgets?.budget_2027 || 0)
+                ).filter(b => b > 0);
+
+                const maxBudget = Math.max(...budgets);
+                const minBudget = Math.min(...budgets);
+
+                let markersAdded = 0;
+
+                projects.forEach(project => {
+                    if (project.coordinates && project.coordinates.length === 2) {
+                        const [lat, lon] = project.coordinates;
+
+                        let color = '#029453';
+                        if (project.investment_start_year === 2025) color = '#029453';
+                        else if (project.investment_start_year === 2026) color = '#184382';
+                        else if (project.investment_start_year === 2027) color = '#10cfc9';
+
+                        const totalBudget = (project.budgets?.budget_2025 || 0) +
+                                           (project.budgets?.budget_2026 || 0) +
+                                           (project.budgets?.budget_2027 || 0);
+
+                        let radius = 6;
+                        if (totalBudget > 0 && maxBudget > minBudget) {
+                            const normalized = (totalBudget - minBudget) / (maxBudget - minBudget);
+                            const sqrtScale = Math.sqrt(normalized);
+                            radius = 6 + (sqrtScale * 19);
+                        }
+
+                        const marker = L.circleMarker([lat, lon], {
+                            radius: radius,
+                            fillColor: color,
+                            color: '#333',
+                            weight: 1,
+                            opacity: 1,
+                            fillOpacity: 0.7
+                        });
+
+                        const popupContent = `
+                            <div style="min-width: 200px;">
+                                <strong>${this.escapeHtml(project.naam)}</strong><br>
+                                <small>${this.escapeHtml(project.verantwoordelijke)}</small><br>
+                                <hr style="margin: 5px 0;">
+                                <strong>Budget:</strong><br>
+                                2025: ${this.formatCurrency(project.budgets?.budget_2025 || 0)}<br>
+                                2026: ${this.formatCurrency(project.budgets?.budget_2026 || 0)}<br>
+                                2027: ${this.formatCurrency(project.budgets?.budget_2027 || 0)}<br>
+                                <strong>Totaal: ${this.formatCurrency(totalBudget)}</strong>
+                            </div>
+                        `;
+
+                        marker.bindPopup(popupContent);
+                        mapData.markers.addLayer(marker);
+                        markersAdded++;
+                    }
+                });
+
+                mapData.markers.addTo(mapData.map);
+
+                if (markersAdded > 0 && mapData.markers.getBounds().isValid()) {
+                    mapData.map.fitBounds(mapData.markers.getBounds(), {
+                        padding: [50, 50],
+                        maxZoom: 11
+                    });
+                }
+
+                console.log(`✅ Added ${markersAdded} markers to ${mapId}`);
+            }
+
+            formatCurrency(amount) {
+                if (amount === 0) return '-';
+                return '€ ' + amount.toLocaleString('nl-BE', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
+            }
+
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new EmbedMaps();
+        });
+    </script>
+</body>
+</html>
